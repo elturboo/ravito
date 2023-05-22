@@ -1,0 +1,260 @@
+/* [Master Stylesheet] */
+/* ----------------------------------------------------------
+    :: Template 
+    :: Author: Turbo
+    :: Version: 1.0
+    :: Created: 06 2023
+    :: Last Updated: 06 2023
+    ---------------------------------------------------------- */
+/* -------------------------------------------------
+    ============ PLACE YOUR CUSTOM CSS HERE ============
+    ------------------------------------------------- */
+/*start my style */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  overflow-x: hidden;
+  position: relative;
+  direction: ltr;
+}
+
+main {
+  min-height: calc(100vh - (70px + 200px));
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.section-padding, footer {
+  padding: 4rem 0;
+}
+
+.transition, .primaryBtn, .secondBtn, footer img {
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+.inputGroup input, .inputGroup select {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.inputGroup {
+  border: 1px solid #D5D5D5;
+  background: #fff;
+  border-radius: 1rem;
+  padding: .5rem 1rem;
+  margin: 1rem 0;
+  height: 68px;
+}
+
+.inputGroup label {
+  display: block;
+  color: #000;
+}
+
+.inputGroup input {
+  width: 100%;
+  color: #999;
+}
+
+.inputGroup input::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+.inputGroup input:-ms-input-placeholder {
+  color: #ccc;
+}
+
+.inputGroup input::-ms-input-placeholder {
+  color: #ccc;
+}
+
+.inputGroup input::placeholder {
+  color: #ccc;
+}
+
+.inputGroup select {
+  color: #ccc;
+  width: 100%;
+}
+
+.primaryBtn, .secondBtn {
+  color: #fff;
+  border-radius: 1rem;
+  padding: .5rem 1rem;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  outline-color: #78cbff;
+  height: 68px;
+}
+
+.primaryBtn {
+  background-color: #4AABE8;
+  border: 2px solid #4AABE8;
+}
+
+.primaryBtn:hover {
+  background: transparent;
+  color: #4AABE8;
+}
+
+.secondBtn {
+  background-color: #8EC6A1;
+  border: 2px solid #8EC6A1;
+}
+
+.secondBtn:hover {
+  background: transparent;
+  color: #8EC6A1;
+}
+
+header nav {
+  background: #fff;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+}
+
+header nav .nav-link {
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+  text-transform: capitalize;
+}
+
+header nav a.navbar-brand {
+  -webkit-margin-end: 5rem;
+          margin-inline-end: 5rem;
+}
+
+header nav img.logo {
+  height: 2.75rem;
+}
+
+header nav .right-side .nav-link {
+  padding-right: 2rem !important;
+  padding-left: 2rem !important;
+}
+
+header nav .right-side .haveBorder {
+  position: relative;
+}
+
+header nav .right-side .haveBorder::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 1px;
+  height: 25px;
+  background: #e1e1e1;
+  bottom: 8px;
+}
+
+.hero img {
+  height: 500px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.searchBar {
+  position: relative;
+  z-index: 10;
+  margin-top: -110px;
+  margin-bottom: 3rem;
+}
+
+.searchBar .content-box {
+  background-color: #F8F8F8;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+footer {
+  background: #F8F8F8;
+  color: #5D5D5D;
+  margin-top: 2rem;
+}
+
+footer img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+footer .links li {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer .links li:last-child {
+  margin-bottom: unset;
+}
+
+footer .links li a {
+  color: inherit;
+  font-size: 20px;
+}
+
+/* Responsive */
+/* Extra small devices (phones, 600px and down) */
+/* galaxy S5 */
+/* iphone x, 6/7/8 */
+/* iphone 6/7/8 plus */
+/* ipad */
+/* ipad pro  */
+/* 17 inch */
+/*# sourceMappingURL=style.css.map */

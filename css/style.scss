@@ -1,0 +1,282 @@
+/* [Master Stylesheet] */
+
+/* ----------------------------------------------------------
+    :: Template 
+    :: Author: Turbo
+    :: Version: 1.0
+    :: Created: 06 2023
+    :: Last Updated: 06 2023
+    ---------------------------------------------------------- */
+
+/* -------------------------------------------------
+    ============ PLACE YOUR CUSTOM CSS HERE ============
+    ------------------------------------------------- */
+
+/*start my style */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    overflow-x: hidden;
+    position: relative;
+    direction: ltr;
+}
+main {
+    min-height: calc(100vh - (70px + 200px));
+}
+
+$mainColor: #4AABE8;
+$secColor:#8EC6A1;
+
+a {
+    text-decoration: none !important;
+}
+
+.mt-5 {
+    margin-top: 5px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.section-padding {
+    padding: 4rem 0;
+}
+
+.transition {
+    transition: all ease-in-out 0.3s;
+}
+
+// utilis 
+
+%reset-input {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.inputGroup {
+    
+    border: 1px solid #D5D5D5;
+    background: #fff;
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+    margin: 1rem 0;
+    height: 68px;
+    label {
+        display: block;
+        color: #000;
+    }
+    input {
+        @extend %reset-input;
+        width: 100%;
+        color: #999;
+        &::placeholder {
+            color: #ccc;
+        }
+    }
+    select {
+        @extend %reset-input;
+        color: #ccc;
+        width: 100%;
+    }
+    
+}
+%defaultButton {
+    color: #fff;
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    @extend .transition;
+    outline-color: #78cbff;
+    height: 68px;
+
+
+   
+}
+.primaryBtn {
+    @extend %defaultButton;
+    background-color: $mainColor;
+    border: 2px solid $mainColor;
+    &:hover {
+        background: transparent;
+        color: $mainColor;
+    }
+
+}
+.secondBtn {
+    @extend %defaultButton;
+    background-color: $secColor;
+    border: 2px solid $secColor;
+    &:hover {
+        background: transparent;
+        color: $secColor;
+    }
+
+}
+
+// my style
+// start header
+header {
+    nav {
+        background: #fff;
+        box-shadow: 0px 3px 6px #00000029;
+
+        .nav-link {
+            padding-right: 1rem !important;
+            padding-left: 1rem !important;
+            text-transform: capitalize;
+        }
+
+        a.navbar-brand {
+            margin-inline-end: 5rem;
+        }
+
+
+        img.logo {
+            height: 2.75rem;
+        }
+
+        .right-side {
+            .nav-link {
+                padding-right: 2rem !important;
+                padding-left: 2rem !important;
+            }
+
+            .haveBorder {
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    width: 1px;
+                    height: 25px;
+                    background: #e1e1e1;
+                    bottom: 8px;
+                }
+
+            }
+        }
+    }
+}
+
+// end header
+
+// start hero
+.hero {
+    img {
+        height: 500px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+// end hero
+
+
+// start search bar
+.searchBar {
+    position: relative;
+    z-index: 10;
+    margin-top: -110px;
+    margin-bottom: 3rem;
+    .content-box {
+        background-color: #F8F8F8;
+        border-radius: 1rem;
+        padding: 1rem;
+    }
+   
+}
+
+// end search bar
+
+// start footer
+footer {
+    @extend .section-padding;
+    background: #F8F8F8;
+    color: #5D5D5D;
+    margin-top: 2rem;
+    img {
+        @extend .transition;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    .links {
+        li {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            &:last-child {
+                margin-bottom: unset;
+            }
+            a {
+                color: inherit;
+                font-size: 20px;
+            }
+        }
+    }
+}
+// end footer
+
+/* Responsive */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* galaxy S5 */
+@media only screen and (min-width: 359px) and (max-width: 361px) {}
+
+/* iphone x, 6/7/8 */
+@media only screen and (min-width: 375px) and (max-width: 380px) {}
+
+/* iphone 6/7/8 plus */
+@media only screen and (min-width: 410px) and (max-width: 416px) {}
+
+/* ipad */
+@media only screen and (min-width: 768px) and (max-width: 992px) {}
+
+/* ipad pro  */
+@media only screen and (min-width: 1024px) and (max-width:1030px) {}
+
+/* 17 inch */
+@media only screen and (min-width: 1920px) and (max-width: 2500px) {}
