@@ -25,8 +25,18 @@ main {
   min-height: calc(100vh - 270px);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #4E4E4E;
+}
+
 a {
   text-decoration: none !important;
+  color: #4AABE8;
 }
 
 .mt-5 {
@@ -73,7 +83,7 @@ a {
   padding: 4rem 0;
 }
 
-.transition, footer img, .secondBtn, .primaryBtn {
+.transition, footer img, .btnGrey, .outlineBtn, .redBtn, .secondBtn, .primaryBtn {
   transition: all ease-in-out 0.3s;
 }
 
@@ -118,7 +128,7 @@ label.requierd::after {
   margin-top: -0.3rem;
 }
 
-.booking .guest_info_box, .hotel_details .hotel_description .hotel_description_box, .hotel_details .search_box, .hotel_details .hotel_details_box, .hotel_filter .hotel_card, .hotel_informations .my_card {
+.profile .profile_content .profile_box, .orders .cancel_box, .voucher .right_box, .voucher .left_box .wallet_balance, .voucher .left_box, .booking .guest_info_box, .hotel_details .hotel_description .hotel_description_box, .hotel_details .search_box, .hotel_details .hotel_details_box, .hotel_filter .hotel_card, .hotel_informations .my_card {
   padding: 1rem;
   border: 1px solid #D5D5D5;
   border-radius: 1rem;
@@ -153,7 +163,7 @@ label.requierd::after {
   width: 100%;
 }
 
-.secondBtn, .primaryBtn {
+.btnGrey, .outlineBtn, .redBtn, .secondBtn, .primaryBtn {
   color: #fff;
   border-radius: 1rem;
   padding: 0.5rem 1rem;
@@ -182,6 +192,35 @@ label.requierd::after {
 .secondBtn:hover {
   background: transparent;
   color: #8EC6A1;
+}
+
+.redBtn {
+  border: 2px solid #E84A4A;
+  background: #E84A4A;
+}
+.redBtn:hover {
+  background: transparent;
+  color: #E84A4A;
+}
+
+.outlineBtn {
+  background-color: transparent;
+  border: 2px solid #4AABE8;
+  color: #4AABE8;
+}
+.outlineBtn:hover {
+  color: #4AABE8;
+  border-color: transparent;
+}
+
+.btnGrey {
+  border: 2px solid #E1E1E1;
+  background: #E1E1E1;
+  color: #4E4E4E;
+}
+.btnGrey:hover {
+  background: transparent;
+  color: #4E4E4E;
 }
 
 nav.breadcrumb {
@@ -838,6 +877,7 @@ footer .links li a {
 .booking .total_box .content_box {
   padding: 1rem;
   background: #F8F8F8;
+  border-radius: 0 0 1rem 1rem;
 }
 .booking .total_box .content_box hr {
   color: #ccc;
@@ -859,6 +899,189 @@ footer .links li a {
 .booking .total_box .copun_btn {
   background: #4AABE8;
   color: #fff;
+}
+
+.voucher {
+  padding: 3rem 0;
+}
+.voucher .left_box img {
+  height: 6rem;
+}
+.voucher .left_box p {
+  margin-bottom: 0.4rem;
+}
+.voucher .left_box .wallet_balance {
+  background: #F8F8F8;
+  border-color: #F8F8F8;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.voucher .right_box {
+  background: #F8F8F8;
+  border-color: #F8F8F8;
+  margin-bottom: 1rem;
+}
+.voucher .right_box ul {
+  margin-top: 1rem;
+}
+.voucher .right_box ul li {
+  margin-bottom: 0.5rem;
+}
+
+.orders .filter_types {
+  background: #F8F8F8;
+}
+.orders .filter_types ul {
+  margin: 0;
+}
+.orders .filter_types ul li {
+  padding: 0.6rem;
+}
+.orders .filter_types ul li.active {
+  border-bottom: 2px solid #4AABE8;
+}
+.orders .filter_types ul li:not(:last-child) {
+  -webkit-margin-end: 2rem;
+          margin-inline-end: 2rem;
+}
+.orders .filter_types ul li:not(:last-child) a {
+  color: #4E4E4E;
+}
+.orders .filter_buttons {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.orders .filter_buttons a {
+  color: #4E4E4E;
+  padding: 0.5rem 1rem;
+  border: 1px solid #4AABE8;
+  border-radius: 0.5rem;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+}
+.orders .filter_buttons a.clear {
+  color: #E84A4A;
+  border-color: transparent;
+}
+.orders .filter_buttons a.exel {
+  font-weight: 700;
+  border-color: transparent;
+  border-radius: 0;
+  border-inline-start-color: #ccc;
+}
+.orders .order_card {
+  border: 1px solid #D5D5D5;
+  border-radius: 0.5rem;
+  display: flex;
+  gap: 1rem;
+  margin: 0.5rem 0;
+}
+.orders .order_card .action_bar {
+  width: 3rem;
+  padding: 1rem 0.5rem;
+  background: #F8F8F8;
+  border-radius: 0.5rem 0 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.orders .order_card .action_bar .dropup .dropdown-toggle::after {
+  display: none;
+}
+.orders .order_card .action_bar a {
+  cursor: pointer;
+}
+.orders .order_card .content_box {
+  padding: 1rem;
+  width: 100%;
+}
+.orders .order_card .content_box .row:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.orders .order_card .content_box h6 {
+  color: #ABABAB;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+.orders .order_card .content_box h5 {
+  margin-top: 0.3rem;
+  font-size: 0.95rem;
+}
+.orders .modal-body {
+  padding: 0;
+}
+.orders .modal-body .order_card {
+  margin: 0;
+  border-radius: 0;
+  border-color: transparent;
+}
+.orders .modal-body .bottom_actions button {
+  font-size: 0.9rem;
+}
+.orders .cancel_box .list {
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.orders .cancel_box .list h5 {
+  margin-bottom: 0;
+}
+.orders .cancel_box select {
+  border-radius: 0.5rem;
+  border-color: #ccc;
+  margin-bottom: 1rem;
+  color: #4E4E4E;
+  padding: 0.5rem;
+}
+.orders .cancel_box button {
+  height: 3rem;
+  font-size: 1rem;
+}
+
+.profile .profile_content {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.profile .profile_content .profile_box {
+  background: #F8F8F8;
+  border-color: #F8F8F8;
+  margin-bottom: 1rem;
+}
+.profile .profile_content .profile_box .inputGroup {
+  margin: 0.5rem 0;
+}
+.profile .profile_content .profile_box .secondBtn {
+  height: 3rem;
+  font-size: 1rem;
+}
+.profile table {
+  margin-top: -1rem;
+}
+.profile table thead tr th:first-child {
+  border-radius: 0.5rem 0 0 0;
+}
+.profile table thead tr th:last-child {
+  border-radius: 0 0.5rem 0 0;
+}
+.profile table tbody {
+  border: 1px solid #eee;
+}
+.profile .table-dark {
+  --bs-table-bg: #555555;
+  --bs-table-striped-bg: #555555;
+  --bs-table-striped-color: #fff;
+  --bs-table-active-bg: #373b3e;
+  --bs-table-active-color: #fff;
+  --bs-table-hover-bg: #323539;
+  --bs-table-hover-color: #fff;
+  color: #fff;
+  border-color: #555555;
 }
 
 /* Responsive */
@@ -899,6 +1122,16 @@ footer .links li a {
   }
   .hotel_details .room_summary img.room_img {
     height: 10rem;
+  }
+  .orders .order_card {
+    gap: 0.5rem;
+  }
+  .profile .top {
+    text-align: center;
+    overflow-x: hidden;
+  }
+  .profile .top .chart-container {
+    justify-content: center;
   }
 }
 /* galaxy S5 */

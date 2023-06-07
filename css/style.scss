@@ -21,6 +21,7 @@
 
 $mainColor: #4AABE8;
 $secColor:#8EC6A1;
+$titleColor: #4E4E4E;
 
 
 body {
@@ -36,11 +37,19 @@ main {
 }
 
 
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $titleColor;
+}
 
 
 a {
     text-decoration: none !important;
+    color: $mainColor;
 }
 
 .mt-5 {
@@ -108,6 +117,7 @@ a {
 .grey_color {
     color: #D3D3D3
 }
+
 .red_color {
     color: #E84A4A;
 }
@@ -118,6 +128,7 @@ a {
 
 label.requierd {
     position: relative;
+
     &::after {
         content: "*";
         color: #f00;
@@ -213,6 +224,39 @@ label.requierd {
         color: $secColor;
     }
 
+}
+.redBtn {
+    @extend %defaultButton;
+    border: 2px solid #E84A4A;
+    background: #E84A4A;
+
+    &:hover {
+        background: transparent;
+        color: #E84A4A;
+    }
+
+}
+.outlineBtn {
+    @extend %defaultButton;
+    background-color: transparent;
+    border: 2px solid $mainColor;
+    color: $mainColor;
+
+    &:hover {
+        color: $mainColor;
+        border-color: transparent;
+    }
+}
+
+.btnGrey {
+    @extend %defaultButton;
+    border: 2px solid #E1E1E1;
+    background: #E1E1E1;
+    color: #4E4E4E;
+    &:hover {
+        background: transparent;
+        color: #4E4E4E;
+    }
 }
 
 nav.breadcrumb {
@@ -925,10 +969,12 @@ footer {
                 }
             }
         }
+
         tbody {
             border: 1px solid #eee;
         }
     }
+
     .map {
         iframe {
             border-radius: 1rem;
@@ -939,6 +985,7 @@ footer {
 
         height: 400px;
     }
+
     .places {
 
         .places_list {
@@ -948,6 +995,7 @@ footer {
             }
         }
     }
+
     .hotel_description {
         .hotel_description_box {
             @extend %my_card;
@@ -955,6 +1003,7 @@ footer {
             border-color: #F8F8F8;
             margin-bottom: 1rem;
             min-height: 22rem;
+
             hr {
                 background: #ccc;
             }
@@ -967,6 +1016,7 @@ footer {
 // start boking
 .booking {
     color: #4E4E4E;
+
     .guest_info_box {
         @extend %my_card;
         background: #F8F8F8;
@@ -974,26 +1024,30 @@ footer {
         margin-bottom: 1rem;
         padding-left: 0;
         padding-right: 0;
+
         .content_padding {
             padding-left: 1rem;
             padding-right: 1rem;
         }
+
         .inputGroup {
             margin-top: 0;
         }
+
         .bed_nums_box {
-       
+
             background: #ECF2EE;
             display: flex;
             justify-content: space-between;
             align-items: center;
             gap: 1rem;
-            margin: 1rem 0 ;
+            margin: 1rem 0;
 
             h6 {
                 margin: 0;
                 padding: .7rem 1.2rem;
             }
+
             .bid-count {
                 background: #DCEBE1;
                 padding: .5rem 1.5rem .5rem 1.5rem;
@@ -1004,7 +1058,7 @@ footer {
                 flex-wrap: nowrap;
                 flex-direction: row;
                 align-items: center;
-                
+
                 &::before {
                     content: '';
                     position: absolute;
@@ -1016,41 +1070,51 @@ footer {
                     border-bottom: 30px solid transparent;
                     border-right: 30px solid #DCEBE1;
                 }
-       
+
             }
         }
+
         .action_btn {
             font-weight: 700;
             font-size: .8rem;
         }
     }
+
     .total_box {
-       
+
         .head_box {
             background: #555555;
             color: #fff;
             padding: 1rem;
             border-radius: 1rem 1rem 0 0;
+
             h4 {
                 font-size: 1.2rem;
             }
+
             p {
                 margin-bottom: 0;
             }
         }
+
         .content_box {
-         padding: 1rem;   
-         background: #F8F8F8;
-         hr {
-            color: #ccc;
-         }
-         p {
-            margin-bottom: .5rem;
-         }
-         .left_side {
-            border-inline-end: 1px solid #ccc;
-         }
+            padding: 1rem;
+            background: #F8F8F8;
+            border-radius: 0 0 1rem 1rem;
+
+            hr {
+                color: #ccc;
+            }
+
+            p {
+                margin-bottom: .5rem;
+            }
+
+            .left_side {
+                border-inline-end: 1px solid #ccc;
+            }
         }
+
         .subtotal_box {
             margin-top: .5rem;
             padding-top: 1rem;
@@ -1058,15 +1122,239 @@ footer {
             border-top: 1px dashed #ccc;
             border-bottom: 1px dashed #ccc;
         }
+
         .copun_btn {
             background: $mainColor;
             color: #fff;
-            
+
         }
     }
 }
 
 // end booking
+
+// start voucher
+.voucher {
+    padding: 3rem 0;
+
+    .left_box {
+        @extend %my_card;
+
+        img {
+            height: 6rem;
+        }
+
+        p {
+            margin-bottom: .4rem
+        }
+
+        .wallet_balance {
+            @extend %my_card;
+            background: #F8F8F8;
+            border-color: #F8F8F8;
+            margin-bottom: 1rem;
+            margin-top: 1rem
+        }
+    }
+
+    .right_box {
+        @extend %my_card;
+        background: #F8F8F8;
+        border-color: #F8F8F8;
+        margin-bottom: 1rem;
+
+        ul {
+            margin-top: 1rem;
+
+            li {
+                margin-bottom: .5rem;
+            }
+        }
+    }
+}
+
+// end voucher
+
+// start orders
+.orders {
+
+    .filter_types {
+        background: #F8F8F8;
+
+        ul {
+            margin: 0;
+            li {
+                padding: .6rem;
+                &.active {
+                    border-bottom: 2px solid $mainColor;
+                }
+            }
+
+            li:not(:last-child) {
+                margin-inline-end: 2rem;
+
+                a {
+                    color: $titleColor;
+                }
+            }
+        }
+    }
+    .filter_buttons {
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem;
+        margin-bottom: 1rem;
+        a {
+            color: $titleColor;
+            padding: .5rem 1rem;
+            border: 1px solid $mainColor;
+            border-radius: .5rem;
+            text-transform: capitalize;
+            font-size: .9rem;
+            &.clear {
+                color: #E84A4A;
+                border-color: transparent;
+            }
+            &.exel {
+                font-weight: 700;
+                border-color: transparent;
+                border-radius: 0;
+                border-inline-start-color:  #ccc;
+            }
+        }
+    }
+    .order_card {
+        border: 1px solid #D5D5D5;
+        border-radius: .5rem;
+        display: flex;
+        gap: 1rem;
+        margin: .5rem 0;
+        .action_bar {
+            width: 3rem;
+            padding: 1rem .5rem;
+            background: #F8F8F8;
+            border-radius: .5rem 0 0 .5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .dropup .dropdown-toggle::after {
+                display: none;
+            }
+            a {
+                cursor: pointer;
+            }
+            
+        }
+        .content_box {
+            padding: 1rem;
+            width: 100%;
+            .row:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+            h6 {
+                color: #ABABAB;
+                margin-top: 0;
+                margin-bottom: .5rem;
+                font-size: .9rem;
+            }
+            h5 {
+                margin-top: .3rem;
+                font-size: .95rem;
+            }
+            
+        }
+    }
+    .modal-body {
+        padding: 0;
+        .order_card {
+            margin: 0;
+            border-radius: 0;
+            border-color: transparent;
+        }
+        .bottom_actions button {
+            font-size: .9rem;
+        }
+    }
+    .cancel_box {
+        @extend %my_card;
+        .list {
+            border: 1px solid #ccc;
+            border-radius: .5rem;
+            padding: .5rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            h5 {
+                margin-bottom: 0;
+            }
+        }
+        select {
+            border-radius: .5rem;
+            border-color: #ccc;
+            margin-bottom: 1rem;
+            color: $titleColor;
+            padding: .5rem;
+        }
+        button {
+            height: 3rem;
+            font-size: 1rem;
+        }
+
+    }
+
+}
+// end orders
+
+// start profile
+.profile {
+    .profile_content {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        .profile_box {
+            @extend %my_card;
+            background: #F8F8F8;
+            border-color: #F8F8F8;
+            margin-bottom: 1rem;
+            .inputGroup {
+                margin: .5rem 0;
+            }
+            .secondBtn {
+                height: 3rem;
+                font-size: 1rem;
+            }  
+        }
+    }
+    table {
+        margin-top: -1rem;
+        thead {
+            tr {
+                th:first-child {
+                    border-radius: .5rem 0 0 0;
+                }
+
+                th:last-child {
+                    border-radius: 0 .5rem 0 0;
+                }
+            }
+        }
+
+        tbody {
+            border: 1px solid #eee;
+        }
+    }
+    .table-dark {
+        --bs-table-bg: #555555;
+        --bs-table-striped-bg: #555555;
+        --bs-table-striped-color: #fff;
+        --bs-table-active-bg: #373b3e;
+        --bs-table-active-color: #fff;
+        --bs-table-hover-bg: #323539;
+        --bs-table-hover-color: #fff;
+        color: #fff;
+        border-color: #555555;
+    }
+}
+// end profile
 
 /* Responsive */
 /* Extra small devices (phones, 600px and down) */
@@ -1099,20 +1387,35 @@ footer {
         margin-bottom: 1rem;
         border-bottom: 1px solid #D3D3D3;
     }
+
     .hotel_details .hotel_details_box .primaryBtn {
         margin-top: 1rem;
     }
+
     .hotel_details .gallery .light_box img {
         height: 6.7rem;
     }
+
     .hotel_details .gallery .light_box {
         padding: 0 1.2rem;
     }
+
     .room_summary h5 {
         font-size: 1rem;
     }
+
     .hotel_details .room_summary img.room_img {
         height: 10rem;
+    }
+    .orders .order_card {
+        gap: .5rem;
+    }
+    .profile .top {
+        text-align: center;
+        overflow-x: hidden;
+        .chart-container {
+            justify-content: center;
+        }
     }
 
 }
