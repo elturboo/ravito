@@ -87,17 +87,41 @@
               </li>
 
               <li class="nav-item dropdown haveBorder">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  <img src="./images/navbar/user.png" height="20" alt="user" class="me-1"> Sign in
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">AR </a></li>
-
-                </ul>
+                <div class="dropdown spec_profile_dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                      role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="./images/navbar/user.png" height="20" alt="user" class="me-1"> 
+                      Sign in
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Login in </a></li>
+                      <li><a class="dropdown-item" href="#">Register </a></li>
+                  </ul>
+              </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"> <img src="./images/navbar/menu.png" height="25" alt="menu" class=""> </a>
+                <div class="dropdown spec_menu_dropdown">
+                  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="./images/navbar/menu.png" height="25" alt="menu" class="">
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <h6>Search</h6>
+                    <li><a class="dropdown-item" href="#"><img src="./images/icons/hotel_black.png" width="20" class="me-3" alt="Hotels">Hotels</a></li>
+                    <li><a class="dropdown-item" href="#"><img src="./images/icons/plane.png" width="20" class="me-3" alt="Air tickets">Air tickets</a></li>
+                    <li><a class="dropdown-item" href="#"><img src="./images/icons/bus.png" width="20" class="me-3" alt="Transfers">Transfers</a></li>
+                    <li><a class="dropdown-item" href="#"><img src="./images/icons/car_black.png" width="20" class="me-3" alt="Car rental">Car rental</a></li>
+                    <li><a class="dropdown-item" href="#"><img src="./images/icons/shield.png" width="20" class="me-3" alt="Visa">Visa</a></li>
+                    <h6>Orders</h6>
+                    <li><a class="dropdown-item" href="#">Hotels</a></li>
+                    <li><a class="dropdown-item" href="#">Air tickets</a></li>
+                    <li><a class="dropdown-item" href="#">Transfers</a></li>
+                    <li><a class="dropdown-item" href="#">Car rental</a></li>
+                    <li><a class="dropdown-item" href="#">Visa</a></li>
+                    <li><a class="dropdown-item" href="#">Reporting</a></li>
+                    <li><a class="dropdown-item" href="#">Clients</a></li>
+
+                  </ul>
+                </div>
               </li>
 
             </ul>
@@ -162,7 +186,7 @@
     <section class="quickStart section-padding">
       <div class="container text-center d-flex justify-content-center align-items-center flex-column">
         <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed vestibulum</h5>
-        <a href="login.html" class="secondBtn mt-20"> Sign up Now</a>
+        <a href="sign_in.html" class="secondBtn mt-20"> Sign up Now</a>
       </div>
     </section>
     <!-- end quickStart -->

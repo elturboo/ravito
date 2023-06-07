@@ -268,6 +268,55 @@ header nav .right-side .haveBorder::after {
   background: #e1e1e1;
   bottom: 8px;
 }
+header .spec_profile_dropdown .dropdown-menu[data-bs-popper] {
+  left: unset;
+  right: 0;
+  padding: 0.5rem;
+  min-width: 20rem;
+}
+header .spec_profile_dropdown .dropdown-menu[data-bs-popper] h5 {
+  margin: 0 0 0.5rem 0;
+  font-weight: 700;
+  font-size: 1rem;
+}
+header .spec_profile_dropdown .dropdown-menu[data-bs-popper] h6 {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+}
+header .spec_profile_dropdown .dropdown-menu[data-bs-popper] p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+header .spec_profile_dropdown .dropdown-menu[data-bs-popper] div {
+  background: #F8F8F8;
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  align-items: center;
+  font-size: 0.9rem;
+}
+header .spec_menu_dropdown h6 {
+  margin: 0;
+  padding: 0.5rem;
+  background: #F8F8F8;
+  border-radius: 0.3rem;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+header .spec_menu_dropdown .dropdown-toggle::after {
+  display: none;
+  outline: none;
+}
+header .spec_menu_dropdown .btn-check:focus + .btn, header .spec_menu_dropdown .btn:focus {
+  box-shadow: unset;
+}
+header .spec_menu_dropdown .dropdown-menu[data-bs-popper] {
+  left: unset;
+  right: 0;
+  padding: 0;
+  min-width: 13rem;
+}
 
 .hero img {
   height: 30rem;
@@ -279,7 +328,7 @@ header nav .right-side .haveBorder::after {
 .searchBar {
   position: relative;
   z-index: 10;
-  margin-top: -8rem;
+  margin-top: -6.2rem;
   margin-bottom: 3rem;
 }
 .searchBar .content-box {
@@ -940,12 +989,12 @@ footer .links li a {
 .orders .filter_types ul li.active {
   border-bottom: 2px solid #4AABE8;
 }
+.orders .filter_types ul li a {
+  color: #4E4E4E;
+}
 .orders .filter_types ul li:not(:last-child) {
   -webkit-margin-end: 2rem;
           margin-inline-end: 2rem;
-}
-.orders .filter_types ul li:not(:last-child) a {
-  color: #4E4E4E;
 }
 .orders .filter_buttons {
   margin-top: 1rem;

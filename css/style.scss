@@ -319,6 +319,62 @@ header {
             }
         }
     }
+    .spec_profile_dropdown {
+        .dropdown-menu[data-bs-popper] {
+            left: unset;
+            right: 0;
+            padding: .5rem;
+            min-width: 20rem;
+            h5 {
+                margin: 0 0 .5rem 0;
+                font-weight: 700;
+                font-size: 1rem;
+            }
+            h6 {
+                margin: 0 0 .5rem 0;
+                font-size: .9rem;
+            }
+            p {
+                margin: 0;
+                font-size: .9rem;
+            }
+            div {
+                background: #F8F8F8;
+                margin-top: .5rem;
+                display: flex;
+                justify-content: space-between;
+                padding: .5rem;
+                align-items: center;
+                font-size: .9rem;
+            }
+        }
+    }
+    .spec_menu_dropdown {
+      
+        h6 {
+            margin: 0;
+            padding: .5rem;
+            background: #F8F8F8;
+            border-radius: .3rem;
+            font-weight: 700;
+            font-size: .8rem;
+
+
+        }
+        .dropdown-toggle::after {
+            display: none;
+            outline: none;
+        }
+        .btn-check:focus+.btn, .btn:focus {
+            box-shadow: unset;
+        }
+        .dropdown-menu[data-bs-popper] {
+            left: unset;
+            right: 0;
+            padding: 0;
+            min-width: 13rem;
+        }
+    }
 }
 
 // end header
@@ -339,7 +395,7 @@ header {
 .searchBar {
     position: relative;
     z-index: 10;
-    margin-top: -8rem;
+    margin-top: -6.2rem;
     margin-bottom: 3rem;
 
     .content-box {
@@ -1188,14 +1244,15 @@ footer {
                 &.active {
                     border-bottom: 2px solid $mainColor;
                 }
+                a {
+                    color: $titleColor;
+                }
             }
 
             li:not(:last-child) {
                 margin-inline-end: 2rem;
 
-                a {
-                    color: $titleColor;
-                }
+               
             }
         }
     }

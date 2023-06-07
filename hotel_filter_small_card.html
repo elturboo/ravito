@@ -35,8 +35,6 @@
 
 
         <header>
-
-
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -44,7 +42,7 @@
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="navbar-brand" href="#"><img class="logo" src="./images/logo.png" alt="logo"></a>
+                    <a class="navbar-brand" href="index.html"><img class="logo" src="./images/logo.png" alt="logo"></a>
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
@@ -86,18 +84,52 @@
                             </li>
 
                             <li class="nav-item dropdown haveBorder">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="./images/navbar/user.png" height="20" alt="user" class="me-1"> Sign in
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="#">AR </a></li>
-
+                                <div class="dropdown spec_profile_dropdown">
+                                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                      role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      <img src="./images/navbar/user.png" height="20" alt="user" class="me-1"> 
+                                      Company Name
+                                  </a>
+                                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                   <h5>Compamy Name</h5>
+                                   <h6>Compamy Name Agency</h6>
+                                   <p class="m-0 text-warning"><i class="fa-solid fa-triangle-exclamation text-warning me-2"></i> Please complete your company profile</p>
+                                    <div>
+                                        <a href="#" class="fw-bold">Company Profile</a>
+                                        <a href="#" class="fw-bold">Logout</a>
+                                    </div>
                                 </ul>
-                            </li>
+                              </div>
+                              </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#"> <img src="./images/navbar/menu.png" height="25" alt="menu"
-                                        class=""> </a>
+                                <div class="dropdown spec_menu_dropdown">
+                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="./images/navbar/menu.png" height="25" alt="menu" class="">
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <h6>Search</h6>
+                                        <li><a class="dropdown-item" href="#"><img src="./images/icons/hotel_black.png"
+                                                    width="20" class="me-3" alt="Hotels">Hotels</a></li>
+                                        <li><a class="dropdown-item" href="#"><img src="./images/icons/plane.png"
+                                                    width="20" class="me-3" alt="Air tickets">Air tickets</a></li>
+                                        <li><a class="dropdown-item" href="#"><img src="./images/icons/bus.png"
+                                                    width="20" class="me-3" alt="Transfers">Transfers</a></li>
+                                        <li><a class="dropdown-item" href="#"><img src="./images/icons/car_black.png"
+                                                    width="20" class="me-3" alt="Car rental">Car rental</a></li>
+                                        <li><a class="dropdown-item" href="#"><img src="./images/icons/shield.png"
+                                                    width="20" class="me-3" alt="Visa">Visa</a></li>
+                                        <h6>Orders</h6>
+                                        <li><a class="dropdown-item" href="#">Hotels</a></li>
+                                        <li><a class="dropdown-item" href="#">Air tickets</a></li>
+                                        <li><a class="dropdown-item" href="#">Transfers</a></li>
+                                        <li><a class="dropdown-item" href="#">Car rental</a></li>
+                                        <li><a class="dropdown-item" href="#">Visa</a></li>
+                                        <li><a class="dropdown-item" href="#">Reporting</a></li>
+                                        <li><a class="dropdown-item" href="#">Clients</a></li>
+
+                                    </ul>
+                                </div>
                             </li>
 
                         </ul>
@@ -514,12 +546,12 @@
                                                 <div class="feat">
                                                     <div class="review"><span class="fw-bold">8.2</span> <span class="d-none">1255 reviews</span></div>
                                                     <div class="feat-list d-none">
-                                                        <img src="./images/icons/wifi.png" height="25" alt="">
-                                                        <img src="./images/icons/wifi.png" height="25" alt="">
-                                                        <img src="./images/icons/wifi.png" height="25" alt="">
-                                                        <img src="./images/icons/wifi.png" height="25" alt="">
-                                                        <img src="./images/icons/wifi.png" height="25" alt="">
-                                                        <img src="./images/icons/wifi.png" height="25" alt="">
+                                                        <img src="./images/icons/wifi.png" height="16" alt="">
+                                                        <img src="./images/icons/car.png" height="15" alt="">
+                                                        <img src="./images/icons/parking.png" height="17" alt="">
+                                                        <img src="./images/icons/baby.png" height="20" alt="">
+                                                        <img src="./images/icons/gym.png" height="15" alt="">
+                                                        <img src="./images/icons/food.png" height="20" alt="">
                                                     </div>
                                                 </div>
                                                 <div class="row d-none">
@@ -566,12 +598,12 @@
                                                 <div class="feat">
                                                     <div class="review"><span class="fw-bold">8.2</span> <span class="d-none">1255 reviews</span></div>
                                                     <div class="feat-list d-none">
-                                                        <img src="./images/icons/wifi.png" height="25" alt="">
-                                                        <img src="./images/icons/wifi.png" height="25" alt="">
-                                                        <img src="./images/icons/wifi.png" height="25" alt="">
-                                                        <img src="./images/icons/wifi.png" height="25" alt="">
-                                                        <img src="./images/icons/wifi.png" height="25" alt="">
-                                                        <img src="./images/icons/wifi.png" height="25" alt="">
+                                                        <img src="./images/icons/wifi.png" height="16" alt="">
+                                                        <img src="./images/icons/car.png" height="15" alt="">
+                                                        <img src="./images/icons/parking.png" height="17" alt="">
+                                                        <img src="./images/icons/baby.png" height="20" alt="">
+                                                        <img src="./images/icons/gym.png" height="15" alt="">
+                                                        <img src="./images/icons/food.png" height="20" alt="">
                                                     </div>
                                                 </div>
                                                 <div class="row d-none">
@@ -618,12 +650,12 @@
                                                 <div class="feat">
                                                     <div class="review"><span class="fw-bold">8.2</span> <span class="d-none">1255 reviews</span></div>
                                                     <div class="feat-list d-none">
-                                                        <img src="./images/icons/wifi.png" height="25" alt="">
-                                                        <img src="./images/icons/wifi.png" height="25" alt="">
-                                                        <img src="./images/icons/wifi.png" height="25" alt="">
-                                                        <img src="./images/icons/wifi.png" height="25" alt="">
-                                                        <img src="./images/icons/wifi.png" height="25" alt="">
-                                                        <img src="./images/icons/wifi.png" height="25" alt="">
+                                                        <img src="./images/icons/wifi.png" height="16" alt="">
+                                                        <img src="./images/icons/car.png" height="15" alt="">
+                                                        <img src="./images/icons/parking.png" height="17" alt="">
+                                                        <img src="./images/icons/baby.png" height="20" alt="">
+                                                        <img src="./images/icons/gym.png" height="15" alt="">
+                                                        <img src="./images/icons/food.png" height="20" alt="">
                                                     </div>
                                                 </div>
                                                 <div class="row d-none">
