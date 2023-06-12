@@ -450,7 +450,7 @@ footer {
 
 // start internal pages
 .sign_in {
-    padding: 4rem 0;
+    padding: 0;
     min-height: calc(100vh - 90px);
     display: flex;
     justify-content: center;
@@ -459,6 +459,7 @@ footer {
     .sign_box {
         box-shadow: 0px 3px 14px #00000029;
         padding: 1rem;
+        background: #fff;
 
         a {
             color: $mainColor;
@@ -475,8 +476,45 @@ footer {
         }
 
     }
+    &.new_login {
+        padding-bottom: 0;
+        justify-content: flex-start;
+        min-height: calc(100vh - 56px);
+        .carousel-item {
+            height: calc(100vh - 56px);
+            width: 100%;
+        
+            img {
+                filter: grayscale(30%);
+                width: 100%;
+            }
+        }
+        
+        .carousel-caption {
+            position: absolute;
+            bottom: unset;
+            right: 10%;
+            left: 10%;
+            padding-top: 1.25rem;
+            padding-bottom: 1.25rem;
+            color: #fff;
+            text-align: unset;
+        }
+    }
 }
 
+.login_footer {
+    background: #f8f8f8;
+    padding: 1rem 0;
+    ul {
+        margin: 0;
+        li {
+            margin-inline-end: 2rem !important;
+        }
+    }
+  
+   
+}
 // hotel page
 .servises-tab {
     background: #D5EEFC;
@@ -1474,7 +1512,10 @@ footer {
             justify-content: center;
         }
     }
-
+    .sign_in.new_login .carousel-item img {
+        height: 100%;
+        object-fit: cover;
+    }
 }
 
 /* galaxy S5 */

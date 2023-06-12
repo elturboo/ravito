@@ -362,7 +362,7 @@ footer .links li a {
 }
 
 .sign_in {
-  padding: 4rem 0;
+  padding: 0;
   min-height: calc(100vh - 90px);
   display: flex;
   justify-content: center;
@@ -371,6 +371,7 @@ footer .links li a {
 .sign_in .sign_box {
   box-shadow: 0px 3px 14px rgba(0, 0, 0, 0.1607843137);
   padding: 1rem;
+  background: #fff;
 }
 .sign_in .sign_box a {
   color: #4AABE8;
@@ -383,6 +384,41 @@ footer .links li a {
   padding: 0.5rem;
   font-weight: 700;
   color: #5D5D5D;
+}
+.sign_in.new_login {
+  padding-bottom: 0;
+  justify-content: flex-start;
+  min-height: calc(100vh - 56px);
+}
+.sign_in.new_login .carousel-item {
+  height: calc(100vh - 56px);
+  width: 100%;
+}
+.sign_in.new_login .carousel-item img {
+  filter: grayscale(30%);
+  width: 100%;
+}
+.sign_in.new_login .carousel-caption {
+  position: absolute;
+  bottom: unset;
+  right: 10%;
+  left: 10%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: unset;
+}
+
+.login_footer {
+  background: #f8f8f8;
+  padding: 1rem 0;
+}
+.login_footer ul {
+  margin: 0;
+}
+.login_footer ul li {
+  -webkit-margin-end: 2rem !important;
+          margin-inline-end: 2rem !important;
 }
 
 .servises-tab {
@@ -1181,6 +1217,11 @@ footer .links li a {
   }
   .profile .top .chart-container {
     justify-content: center;
+  }
+  .sign_in.new_login .carousel-item img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 /* galaxy S5 */

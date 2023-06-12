@@ -1,49 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <!-- Required meta tags -->
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <!-- title -->
   <title>Ravito</title>
   <!-- Favicon -->
-  <link rel="shortcut icon" href="./images/favicon.png">
-  <meta name="description" content="Ravito">
+  <link rel="shortcut icon" href="./images/favicon.png" />
+  <meta name="description" content="Ravito" />
   <!--    first mobile meta-->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!--    internet explorer compatibility meta-->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <!--    fontawesome-->
-  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
   <!-- google fonts * cairo * -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" />
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
   <!-- RTL Bootstrap  -->
   <!-- <link rel="stylesheet" href="./css/bootstrap.rtl.min.css"> -->
 
+  <link rel="stylesheet" href="./css/daterangepicker.css" />
 
- <!-- Style file -->
-  <link rel="stylesheet" href="css/style.css">
+  <!-- Style file -->
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
   <main>
-
-
     <header>
-
-
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
             aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a class="navbar-brand" href="#"><img class="logo" src="./images/logo.png" alt="logo"></a>
+          <a class="navbar-brand" href="#"><img class="logo" src="./images/logo.png" alt="logo" /></a>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
@@ -58,29 +55,28 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Clients</a>
               </li>
-
             </ul>
 
             <ul class="navbar-nav right-side ms-auto mb-2 mb-lg-0">
               <li class="nav-item dropdown haveBorder">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                   data-bs-toggle="dropdown" aria-expanded="false">
-                  <img src="./images/navbar/currency.png" height="20" alt="dollar" class="me-1"> USD
+                  <img src="./images/navbar/currency.png" height="20" alt="dollar" class="me-1" />
+                  USD
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <li><a class="dropdown-item" href="#">SAR </a></li>
-
                 </ul>
               </li>
 
               <li class="nav-item dropdown haveBorder">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                   data-bs-toggle="dropdown" aria-expanded="false">
-                  <img src="./images/navbar/lang.png" height="15" alt="us-flag" class="me-1"> EN
+                  <img src="./images/navbar/lang.png" height="15" alt="us-flag" class="me-1" />
+                  EN
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <li><a class="dropdown-item" href="#">AR </a></li>
-
                 </ul>
               </li>
 
@@ -88,7 +84,7 @@
                 <div class="dropdown spec_profile_dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                     data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="./images/navbar/user.png" height="20" alt="user" class="me-1">
+                    <img src="./images/navbar/user.png" height="20" alt="user" class="me-1" />
                     Sign in
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -101,20 +97,30 @@
                 <div class="dropdown spec_menu_dropdown">
                   <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
                     aria-expanded="false">
-                    <img src="./images/navbar/menu.png" height="25" alt="menu" class="">
+                    <img src="./images/navbar/menu.png" height="25" alt="menu" class="" />
                   </button>
                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                     <h6>Search</h6>
-                    <li><a class="dropdown-item" href="#"><img src="./images/icons/hotel_black.png" width="20"
-                          class="me-3" alt="Hotels">Hotels</a></li>
-                    <li><a class="dropdown-item" href="#"><img src="./images/icons/plane.png" width="20" class="me-3"
-                          alt="Air tickets">Air tickets</a></li>
-                    <li><a class="dropdown-item" href="#"><img src="./images/icons/bus.png" width="20" class="me-3"
-                          alt="Transfers">Transfers</a></li>
-                    <li><a class="dropdown-item" href="#"><img src="./images/icons/car_black.png" width="20"
-                          class="me-3" alt="Car rental">Car rental</a></li>
-                    <li><a class="dropdown-item" href="#"><img src="./images/icons/shield.png" width="20" class="me-3"
-                          alt="Visa">Visa</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#"><img src="./images/icons/hotel_black.png" width="20"
+                          class="me-3" alt="Hotels" />Hotels</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"><img src="./images/icons/plane.png" width="20" class="me-3"
+                          alt="Air tickets" />Air tickets</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"><img src="./images/icons/bus.png" width="20" class="me-3"
+                          alt="Transfers" />Transfers</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"><img src="./images/icons/car_black.png" width="20" class="me-3"
+                          alt="Car rental" />Car rental</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#"><img src="./images/icons/shield.png" width="20" class="me-3"
+                          alt="Visa" />Visa</a>
+                    </li>
                     <h6>Orders</h6>
                     <li><a class="dropdown-item" href="#">Hotels</a></li>
                     <li><a class="dropdown-item" href="#">Air tickets</a></li>
@@ -123,22 +129,18 @@
                     <li><a class="dropdown-item" href="#">Visa</a></li>
                     <li><a class="dropdown-item" href="#">Reporting</a></li>
                     <li><a class="dropdown-item" href="#">Clients</a></li>
-
                   </ul>
                 </div>
               </li>
-
             </ul>
-
           </div>
         </div>
       </nav>
-
     </header>
 
     <!-- start hero -->
     <section class="hero">
-      <img src="./images/hero/banner.png" alt="">
+      <img src="./images/hero/banner.png" alt="" />
     </section>
     <!-- end hero -->
 
@@ -151,7 +153,7 @@
               <div class="col-sm-6">
                 <div class="inputGroup">
                   <label for="destination">Destination</label>
-                  <input name="destination" type="text" placeholder="City , Hotel" autofocus>
+                  <input name="destination" type="text" placeholder="City , Hotel" autofocus />
                 </div>
                 <div class="inputGroup">
                   <label for="destination">1 room for</label>
@@ -164,20 +166,16 @@
               </div>
               <div class="col-sm-6">
                 <div class="row">
-                  <div class="col-6">
+                  <div class="col-12">
                     <div class="inputGroup">
-                      <label for="Check in">Check in</label>
-                      <input name="Check in" type="date">
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <div class="inputGroup">
-                      <label for="Check out">Check out</label>
-                      <input name="Check out" type="date">
+                      <label for="Check in">Dates</label>
+                      <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" />
                     </div>
                   </div>
                 </div>
-                <button class="primaryBtn w-100"> <i class="fa fa-search"></i> Search</button>
+                <button class="primaryBtn w-100">
+                  <i class="fa fa-search"></i> Search
+                </button>
               </div>
             </div>
           </form>
@@ -189,27 +187,32 @@
     <!-- start quickStart -->
     <section class="quickStart section-padding">
       <div class="container text-center d-flex justify-content-center align-items-center flex-column">
-        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed vestibulum</h5>
+        <h5>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+          sed vestibulum
+        </h5>
         <a href="sign_in.html" class="secondBtn mt-20"> Sign up Now</a>
       </div>
     </section>
     <!-- end quickStart -->
 
-
     <!-- start footer -->
     <footer>
       <div class="container">
-
         <div class="row">
           <div class="col-sm-4">
-            <a href="index.html"> <img src="./images/logo.png" height="50" alt="footer_logo" class="logo mb-30"></a>
+            <a href="index.html">
+              <img src="./images/logo.png" height="50" alt="footer_logo" class="logo mb-30" /></a>
             <ul class="list-unstyled list-inline d-flex gap-3">
-              <li class="list-inline-item"><a href="#"><img height="25" src="./images/social/instagram.png"
-                    alt="instagram"></a></li>
-              <li class="list-inline-item"><a href="#"><img height="25" src="./images/social/facebook.png"
-                    alt="facebook"></a></li>
-              <li class="list-inline-item"><a href="#"><img height="25" src="./images/social/twitter.png"
-                    alt="twitter"></a></li>
+              <li class="list-inline-item">
+                <a href="#"><img height="25" src="./images/social/instagram.png" alt="instagram" /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><img height="25" src="./images/social/facebook.png" alt="facebook" /></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#"><img height="25" src="./images/social/twitter.png" alt="twitter" /></a>
+              </li>
             </ul>
           </div>
           <div class="col-sm-2">
@@ -244,7 +247,6 @@
       </div>
     </footer>
     <!-- end footer -->
-
   </main>
 
   <!--  Bootstrap-->
@@ -258,6 +260,27 @@
   </script>
   <!-- jquery -->
   <script src="./js/jquery-1.12.3.min.js"></script>
+
+  <!-- for datePicker -->
+  <script src="./js/moment.min.js"></script>
+  <script src="./js/daterangepicker.js"></script>
+  <script>
+    $(function () {
+      $('input[name="daterange"]').daterangepicker({
+          opens: "left",
+        },
+        function (start, end, label) {
+          console.log(
+            "A new date selection was made: " +
+            start.format("YYYY-MM-DD") +
+            " to " +
+            end.format("YYYY-MM-DD")
+          );
+        }
+      );
+    });
+  </script>
+  <!-- end for date picker -->
   <!-- fontawesome -->
   <script src="./js/fontawesome-all.min.js"></script>
   <!-- lightbox -->
