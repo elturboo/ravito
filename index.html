@@ -27,6 +27,8 @@
 
   <link rel="stylesheet" href="./css/daterangepicker.css" />
 
+  <link rel="stylesheet" href="./css/select2.min.css">
+
   <!-- Style file -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -153,16 +155,82 @@
               <div class="col-sm-6">
                 <div class="inputGroup">
                   <label for="destination">Destination</label>
-                  <input name="destination" type="text" placeholder="City , Hotel" autofocus />
-                </div>
-                <div class="inputGroup">
-                  <label for="destination">1 room for</label>
-                  <select name="rooms" id="rooms">
-                    <option value="2">2 Guests</option>
-                    <option value="3">3 Guests</option>
-                    <option value="4">4 Guests</option>
+                  <select class="selectTwo js-example-basic-single" name="state">
+                    <option value="AL">Alabama</option>
+                      ...
+                    <option value="WY">Wyoming</option>
                   </select>
                 </div>
+                <div class="inputGroup">
+                  <label for="destination">Room for</label>
+
+                  <div class="btn-group rooms_dropdown">
+                      <button class="dropdown-toggle w-100 p-0 m-0 input_drop" type="button"
+                          id="dropdownMenuClickableInside" data-bs-toggle="dropdown"
+                          data-bs-auto-close="outside" aria-expanded="false">
+                          Guests
+                      </button>
+                      <div class="dropdown-menu room_menu"
+                          aria-labelledby="dropdownMenuClickableInside">
+                          <div class="py-2 border-bottom">
+                              <div class="row align-items-center">
+                                  <div class="col-6">
+                                      <button type="button"
+                                          class="addRoom btn mt-0 main_color fw-bolder px-0"><i
+                                              class="fa-solid fa-plus me-1"></i> Add a
+                                          room</button>
+                                  </div>
+                                  <div class="col-6">
+                                      <button class="done secondBtn mt-0"
+                                          type="button">Done</button>
+
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="room_list">
+                              <h4>Room 1</h4>
+                              <div class="row">
+                                  <div class="col-6">
+                                      <label for="">Adults</label>
+                                      <form action="">
+                                          <div class="quantity-wrapper">
+
+                                              <button type="button"
+                                                  class="quantity-button decreases">
+                                                  -
+                                              </button>
+                                              <input id="quantity" class="quantity" type="text"
+                                                  value="0">
+                                              <button type="button"
+                                                  class="quantity-button increases">
+                                                  +
+                                              </button>
+                                              </input>
+                                          </div>
+                                      </form>
+             
+                                  </div>
+                                  <div class="col-6">
+                                      <label for="">Children</label>
+                                      <div class="d-flex gap-4 align-items-center">
+                                          <select class="add_child " name="" id="">
+                                              <option hidden>Add a child</option>
+                                              <option value="0">0 years</option>
+                                              <option value="1">1 years</option>
+                                              <option value="2">2 years</option>
+                                              <option value="3">3 years</option>
+                                          </select>
+                                          <button type="button" class="addChild btn p-0"><i
+                                                  class="fa-solid fa-plus"></i></button>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+
+
+                      </div>
+                  </div>
+              </div>
               </div>
               <div class="col-sm-6">
                 <div class="row">
@@ -267,15 +335,16 @@
   <script>
     $(function () {
       $('input[name="daterange"]').daterangepicker({
-          opens: "left",
+          timePicker: false,
+          startDate: moment(),
+          endDate: moment(),
+          locale: {
+            format: 'DD/MM/YYYY',
+          }
         },
         function (start, end, label) {
-          console.log(
-            "A new date selection was made: " +
-            start.format("YYYY-MM-DD") +
-            " to " +
-            end.format("YYYY-MM-DD")
-          );
+          console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format(
+            'YYYY-MM-DD'));
         }
       );
     });
@@ -285,6 +354,13 @@
   <script src="./js/fontawesome-all.min.js"></script>
   <!-- lightbox -->
   <script src="./js/lightbox.min.js"></script>
+  <!-- select2 -->
+  <script src="./js/select2.min.js"></script>
+  <script>
+    $(document).ready(function() {
+    $('.js-example-basic-single').select2();
+});
+  </script>
   <!--    My JS Code   -->
   <script src="./js/main.js"></script>
 </body>

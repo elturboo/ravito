@@ -308,7 +308,8 @@ header .spec_menu_dropdown .dropdown-toggle::after {
   display: none;
   outline: none;
 }
-header .spec_menu_dropdown .btn-check:focus + .btn, header .spec_menu_dropdown .btn:focus {
+header .spec_menu_dropdown .btn-check:focus + .btn,
+header .spec_menu_dropdown .btn:focus {
   box-shadow: unset;
 }
 header .spec_menu_dropdown .dropdown-menu[data-bs-popper] {
@@ -1167,6 +1168,107 @@ footer .links li a {
   --bs-table-hover-color: #fff;
   color: #fff;
   border-color: #555555;
+}
+
+.rooms_dropdown {
+  width: 100%;
+}
+.rooms_dropdown .room_menu {
+  min-width: 24rem;
+  padding: 0 1rem;
+  padding-bottom: 0.5rem;
+}
+.rooms_dropdown button.input_drop {
+  background: transparent;
+  border: unset;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  outline: unset;
+  color: #cfccd4;
+}
+.rooms_dropdown .done {
+  height: 2.3rem;
+  width: 100%;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+}
+.rooms_dropdown .room_list {
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+.rooms_dropdown .room_list:not(:last-child) {
+  border-bottom: 1px solid #dedede;
+}
+.rooms_dropdown .room_list h4 {
+  color: #000;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+}
+.rooms_dropdown .room_list .removeRoom {
+  cursor: pointer;
+}
+.rooms_dropdown .room_list select.add_child {
+  border: 1px solid #ccc;
+  border-radius: 0.3rem;
+  height: 40px;
+  margin-top: 0.3rem;
+  background: #fff;
+  color: #555;
+}
+.rooms_dropdown .room_list .quantity-wrapper {
+  display: flex;
+  margin-top: 0.3rem;
+}
+.rooms_dropdown .room_list .quantity-wrapper .quantity-button {
+  border: none;
+  width: 40px;
+  height: 40px;
+  transition: 300ms;
+  margin-top: 0;
+}
+.rooms_dropdown .room_list .quantity-wrapper .quantity-button:hover {
+  background-color: #edebeb;
+}
+.rooms_dropdown .room_list .quantity-wrapper .quantity-button.decreases {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.rooms_dropdown .room_list .quantity-wrapper .quantity-button.increases {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.rooms_dropdown .room_list .quantity-wrapper .quantity {
+  border: none;
+  background-color: #fafafa;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 16px;
+}
+.rooms_dropdown .room_list .border_box {
+  width: 132px;
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+  margin-top: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.select2-container--default .select2-selection--single {
+  border: none;
+  background: transparent;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  color: #9999b3;
 }
 
 /* Responsive */

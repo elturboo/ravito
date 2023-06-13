@@ -225,6 +225,7 @@ label.requierd {
     }
 
 }
+
 .redBtn {
     @extend %defaultButton;
     border: 2px solid #E84A4A;
@@ -236,6 +237,7 @@ label.requierd {
     }
 
 }
+
 .outlineBtn {
     @extend %defaultButton;
     background-color: transparent;
@@ -253,6 +255,7 @@ label.requierd {
     border: 2px solid #E1E1E1;
     background: #E1E1E1;
     color: #4E4E4E;
+
     &:hover {
         background: transparent;
         color: #4E4E4E;
@@ -319,25 +322,30 @@ header {
             }
         }
     }
+
     .spec_profile_dropdown {
         .dropdown-menu[data-bs-popper] {
             left: unset;
             right: 0;
             padding: .5rem;
             min-width: 20rem;
+
             h5 {
                 margin: 0 0 .5rem 0;
                 font-weight: 700;
                 font-size: 1rem;
             }
+
             h6 {
                 margin: 0 0 .5rem 0;
                 font-size: .9rem;
             }
+
             p {
                 margin: 0;
                 font-size: .9rem;
             }
+
             div {
                 background: #F8F8F8;
                 margin-top: .5rem;
@@ -349,8 +357,9 @@ header {
             }
         }
     }
+
     .spec_menu_dropdown {
-      
+
         h6 {
             margin: 0;
             padding: .5rem;
@@ -361,13 +370,17 @@ header {
 
 
         }
+
         .dropdown-toggle::after {
             display: none;
             outline: none;
         }
-        .btn-check:focus+.btn, .btn:focus {
+
+        .btn-check:focus+.btn,
+        .btn:focus {
             box-shadow: unset;
         }
+
         .dropdown-menu[data-bs-popper] {
             left: unset;
             right: 0;
@@ -476,20 +489,22 @@ footer {
         }
 
     }
+
     &.new_login {
         padding-bottom: 0;
         justify-content: flex-start;
         min-height: calc(100vh - 56px);
+
         .carousel-item {
             height: calc(100vh - 56px);
             width: 100%;
-        
+
             img {
                 filter: grayscale(30%);
                 width: 100%;
             }
         }
-        
+
         .carousel-caption {
             position: absolute;
             bottom: unset;
@@ -506,15 +521,18 @@ footer {
 .login_footer {
     background: #f8f8f8;
     padding: 1rem 0;
+
     ul {
         margin: 0;
+
         li {
             margin-inline-end: 2rem !important;
         }
     }
-  
-   
+
+
 }
+
 // hotel page
 .servises-tab {
     background: #D5EEFC;
@@ -1277,11 +1295,14 @@ footer {
 
         ul {
             margin: 0;
+
             li {
                 padding: .6rem;
+
                 &.active {
                     border-bottom: 2px solid $mainColor;
                 }
+
                 a {
                     color: $titleColor;
                 }
@@ -1290,16 +1311,18 @@ footer {
             li:not(:last-child) {
                 margin-inline-end: 2rem;
 
-               
+
             }
         }
     }
+
     .filter_buttons {
         margin-top: 1rem;
         display: flex;
         flex-wrap: wrap;
         gap: .5rem;
         margin-bottom: 1rem;
+
         a {
             color: $titleColor;
             padding: .5rem 1rem;
@@ -1307,24 +1330,28 @@ footer {
             border-radius: .5rem;
             text-transform: capitalize;
             font-size: .9rem;
+
             &.clear {
                 color: #E84A4A;
                 border-color: transparent;
             }
+
             &.exel {
                 font-weight: 700;
                 border-color: transparent;
                 border-radius: 0;
-                border-inline-start-color:  #ccc;
+                border-inline-start-color: #ccc;
             }
         }
     }
+
     .order_card {
         border: 1px solid #D5D5D5;
         border-radius: .5rem;
         display: flex;
         gap: 1rem;
         margin: .5rem 0;
+
         .action_bar {
             width: 3rem;
             padding: 1rem .5rem;
@@ -1333,56 +1360,69 @@ footer {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+
             .dropup .dropdown-toggle::after {
                 display: none;
             }
+
             a {
                 cursor: pointer;
             }
-            
+
         }
+
         .content_box {
             padding: 1rem;
             width: 100%;
+
             .row:not(:last-child) {
                 margin-bottom: 1rem;
             }
+
             h6 {
                 color: #ABABAB;
                 margin-top: 0;
                 margin-bottom: .5rem;
                 font-size: .9rem;
             }
+
             h5 {
                 margin-top: .3rem;
                 font-size: .95rem;
             }
-            
+
         }
     }
+
     .modal-body {
         padding: 0;
+
         .order_card {
             margin: 0;
             border-radius: 0;
             border-color: transparent;
         }
+
         .bottom_actions button {
             font-size: .9rem;
         }
     }
+
     .cancel_box {
         @extend %my_card;
+
         .list {
             border: 1px solid #ccc;
             border-radius: .5rem;
             padding: .5rem;
             margin-top: 1rem;
             margin-bottom: 1rem;
+
             h5 {
                 margin-bottom: 0;
             }
         }
+
         select {
             border-radius: .5rem;
             border-color: #ccc;
@@ -1390,6 +1430,7 @@ footer {
             color: $titleColor;
             padding: .5rem;
         }
+
         button {
             height: 3rem;
             font-size: 1rem;
@@ -1398,6 +1439,7 @@ footer {
     }
 
 }
+
 // end orders
 
 // start profile
@@ -1405,22 +1447,27 @@ footer {
     .profile_content {
         padding-top: 3rem;
         padding-bottom: 3rem;
+
         .profile_box {
             @extend %my_card;
             background: #F8F8F8;
             border-color: #F8F8F8;
             margin-bottom: 1rem;
+
             .inputGroup {
                 margin: .5rem 0;
             }
+
             .secondBtn {
                 height: 3rem;
                 font-size: 1rem;
-            }  
+            }
         }
     }
+
     table {
         margin-top: -1rem;
+
         thead {
             tr {
                 th:first-child {
@@ -1437,6 +1484,7 @@ footer {
             border: 1px solid #eee;
         }
     }
+
     .table-dark {
         --bs-table-bg: #555555;
         --bs-table-striped-bg: #555555;
@@ -1449,8 +1497,115 @@ footer {
         border-color: #555555;
     }
 }
+
 // end profile
 
+.rooms_dropdown {
+    width: 100%;
+
+    .room_menu {
+        min-width: 24rem;
+        padding: 0 1rem;
+        padding-bottom: .5rem;
+    }
+
+    button.input_drop {
+        background: transparent;
+        border: unset;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        outline: unset;
+        color: #cfccd4;
+
+    }
+    .done {
+        height: 2.3rem;
+        width: 100%;
+        border-radius: .3rem;
+        font-size: 1rem;
+    }
+    .room_list {
+        padding-bottom: .5rem;
+        padding-top: .5rem;
+      
+        &:not(:last-child) {
+            border-bottom: 1px solid #dedede;
+        }
+
+        h4 {
+            color: #000;
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: .2rem;
+        }
+        .removeRoom {
+            cursor: pointer;
+        }
+
+        select.add_child {
+            border: 1px solid #ccc;
+            border-radius: .3rem;
+            height: 40px;
+            margin-top: .3rem;
+            background: #fff;
+            color: #555;
+        }
+
+        .quantity-wrapper {
+            display: flex;
+            margin-top: .3rem;
+            .quantity-button {
+                border: none;
+                width: 40px;
+                height: 40px;
+                transition: 300ms;
+                margin-top: 0;
+                &:hover {
+                    background-color: #edebeb;
+                }
+                &.decreases {
+                    border-top-left-radius: 4px;
+                    border-bottom-left-radius: 4px;
+                }
+                &.increases {
+                    border-top-right-radius: 4px;
+                    border-bottom-right-radius: 4px;
+                }
+            }
+            .quantity {
+                border: none;
+                background-color: #fafafa;
+                width: 40px;
+                height: 40px;
+                margin: 0;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                padding: 0.5rem;
+                font-size: 16px;
+            }
+        }
+        .border_box {
+            width: 132px;
+            border: 1px solid #ccc;
+            border-radius: .4rem;
+            margin-top: .2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+.select2-container--default .select2-selection--single {
+    border: none;
+    background: transparent;
+    .select2-selection__rendered {
+        padding-inline-start: 0;
+        color: #9999b3;
+    }
+}
 /* Responsive */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -1502,16 +1657,20 @@ footer {
     .hotel_details .room_summary img.room_img {
         height: 10rem;
     }
+
     .orders .order_card {
         gap: .5rem;
     }
+
     .profile .top {
         text-align: center;
         overflow-x: hidden;
+
         .chart-container {
             justify-content: center;
         }
     }
+
     .sign_in.new_login .carousel-item img {
         height: 100%;
         object-fit: cover;
