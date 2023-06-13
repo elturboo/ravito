@@ -18,8 +18,6 @@ $(document).on('click', '.removeChild', function () {
     $(this).parent().remove();
 });
 
-let increase = document.querySelectorAll(".increases");
-let decrease = document.querySelectorAll(".decreases");
 // add room
 let roomNum = 1;
 $(document).on('click', '.addRoom', function () {
@@ -59,14 +57,7 @@ $(document).on('click', '.addRoom', function () {
         </div>
     </div>`);
 
-    increase = [...increase,document.querySelector(".increases") ]
-    decrease = [...decrease,document.querySelector(".increases") ]
 });
-
-setTimeout(() => {
-    console.log(increase)
-}, 5000);
-
 
 // remove room
 $(document).on('click', '.removeRoom', function () {
@@ -76,9 +67,8 @@ $(document).on('click', '.removeRoom', function () {
 
 // numbers of adults
 
-
-
-
+let increase = document.querySelectorAll(".increases");
+let decrease = document.querySelectorAll(".decreases");
 function increaseValue(index) {
     let value = document.getElementsByClassName("quantity")[index].value;
     value = isNaN(value) ? 0 : value;
@@ -93,9 +83,6 @@ function decreaseValue(index) {
     value--;
     document.getElementsByClassName("quantity")[index].value = value;
 }
-
-
-
 
 increase.forEach(function (minor, index) {
     minor.addEventListener("click", () => {
