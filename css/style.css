@@ -409,6 +409,9 @@ footer .links li a {
   color: #fff;
   text-align: unset;
 }
+.sign_in.new_login .carousel-control-next, .sign_in.new_login .carousel-control-prev {
+  width: 11%;
+}
 
 .login_footer {
   background: #f8f8f8;
@@ -1177,6 +1180,16 @@ footer .links li a {
   min-width: 24rem;
   padding: 0 1rem;
   padding-bottom: 0.5rem;
+}
+.rooms_dropdown .child_badge {
+  padding: 0.3rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 0.3rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  background: #f8f8f8;
 }
 .rooms_dropdown button.input_drop {
   background: transparent;

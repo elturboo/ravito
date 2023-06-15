@@ -515,6 +515,9 @@ footer {
             color: #fff;
             text-align: unset;
         }
+        .carousel-control-next, .carousel-control-prev {
+            width: 11%;
+        }
     }
 }
 
@@ -1507,6 +1510,16 @@ footer {
         min-width: 24rem;
         padding: 0 1rem;
         padding-bottom: .5rem;
+    }
+    .child_badge {
+        padding: .3rem;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border-radius: .3rem;
+        margin-top: .2rem;
+        margin-bottom: .2rem;
+        background: #f8f8f8;
     }
 
     button.input_drop {
