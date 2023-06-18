@@ -1,20 +1,12 @@
-
-
-
-
-
+let roomNum = 1;
 // get child age
 function val() {
-    childAge = document.getElementById("add_child_select").value;
+    childAge = document.getElementById(`add_child_select${roomNum}`).value;
     return childAge;
 }
-let childrenNums = 0
 // add room
-let roomNum = 1;
 $(document).on('click', '.addRoom', function () {
-    
     roomNum++;
-
     $(this).parent().parent().parent().parent().append(` <div class="room_list">
         <h4 class="d-flex justify-content-between align-items-center">Room ${roomNum} <span class="removeRoom red_color fw-normal">remove</span></h4>
         <div class="row">
@@ -34,16 +26,19 @@ $(document).on('click', '.addRoom', function () {
             </div>
             <div class="col-6">
                 <label for="">Children</label>
+                <div>
+                
                 <div class="d-flex gap-4 align-items-center">
-                        <select onchange="val()"  class="add_child " name="" id="add_child_select">
+                        <select onchange="val()"  class="add_child " name="" id="add_child_select${roomNum}">
                             <option hidden>Add a child</option>
                             <option value="0">0 years</option>
                             <option value="1">1 years</option>
                             <option value="2">2 years</option>
                             <option value="3">3 years</option>
                         </select>
-                        <button id="add_child_btn" type="button" class="addChild btn p-0"><i
+                        <button id="add_child_btn${roomNum}" type="button" class="addChild btn p-0"><i
                         class="fa-solid fa-plus"></i></button>                </div>
+            </div>
             </div>
         </div>
     </div>`);
@@ -91,36 +86,37 @@ decrease.forEach(function (plus, index) {
 
 // remove child
 $(document).on('click', '.removeChild', function () {
-    $(this).parent().remove();
-    childrenNums--
-    console.log(childrenNums);
+    childrenNums = $(this).parent().parent().parent().find('.specialSpan').length - 1;
+    $(this).parent().parent().remove();
     if (childrenNums >= 4) {
-        $('#add_child_btn').css({'display': 'none'});
-        $('#add_child_select').css({'display': 'none'});
+        $(`#add_child_btn${roomNum}`).css({'display': 'none'});
+        $(`#add_child_select${roomNum}`).css({'display': 'none'});
     } else {
-        $('#add_child_btn').css({'display': 'block'});
-        $('#add_child_select').css({'display': 'block'});
+        $(`#add_child_btn${roomNum}`).css({'display': 'block'});
+        $(`#add_child_select${roomNum}`).css({'display': 'block'});
     }
+ 
+    
 });
 // add child
 $(document).on('click', '.addChild', function () {
+    childrenNums = $(this).parent().parent().parent().find('.specialSpan').length + 1;
     if(childAge>=0) {
-        $(this).parent().parent().prepend(`<div class="d-flex gap-4 align-items-center">
+        $(this).parent().parent().prepend(`<div class="d-flex gap-4 align-items-center specialSpan">
         <span class="child_badge">
         ${childAge} ${childAge > 1? "years" : "year"}
         <button type="button" class="removeChild btn p-0 red_color"><i class="fa-solid fa-times"></i></button>
         </span>
         </div>`);
     } 
-    childrenNums++
 
-    console.log(childrenNums);
+    
     if (childrenNums >= 4) {
-        $('#add_child_btn').css({'display': 'none'});
-        $('#add_child_select').css({'display': 'none'});
+        $(`#add_child_btn${roomNum}`).css({'display': 'none'});
+        $(`#add_child_select${roomNum}`).css({'display': 'none'});
     } else {
-        $('#add_child_btn').css({'display': 'block'});
-        $('#add_child_select').css({'display': 'block'});
+        $(`#add_child_btn${roomNum}`).css({'display': 'block'});
+        $(`#add_child_select${roomNum}`).css({'display': 'block'});
     }
 });
 
