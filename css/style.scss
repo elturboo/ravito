@@ -625,7 +625,7 @@ footer {
                     }
                 }
 
-                input:checked+.all {
+                input.active +.all {
                     background: $secColor;
                     color: #fff;
                 }

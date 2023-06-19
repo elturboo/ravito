@@ -506,8 +506,8 @@ footer .links li a {
 .filter_content .filter_box .rate_box .checkbox_box .all p {
   margin: 0;
 }
-.filter_content .filter_box .stars_box .checkbox_box input:checked + .all,
-.filter_content .filter_box .rate_box .checkbox_box input:checked + .all {
+.filter_content .filter_box .stars_box .checkbox_box input.active + .all,
+.filter_content .filter_box .rate_box .checkbox_box input.active + .all {
   background: #8EC6A1;
   color: #fff;
 }
