@@ -804,6 +804,19 @@ footer {
         }
     }
 
+    .ph-item {
+        direction: ltr;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        padding:1rem 0 .5rem 0;
+        overflow: hidden;
+        margin-bottom: 1rem;
+        background-color: #fff;
+        border: 1px solid #e6e6e6;
+        border-radius: 1rem;
+    }
+
     .hotel_card {
         @extend %my_card;
         padding: 0;

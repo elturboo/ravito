@@ -647,6 +647,18 @@ footer .links li a {
 .hotel_filter .filter_sidebar .checkbox-list i.fa-star {
   color: #FFC107;
 }
+.hotel_filter .ph-item {
+  direction: ltr;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 0 0.5rem 0;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 1rem;
+}
 .hotel_filter .hotel_card {
   padding: 0;
   color: #4E4E4E;
