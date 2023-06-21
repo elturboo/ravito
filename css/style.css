@@ -409,7 +409,8 @@ footer .links li a {
   color: #fff;
   text-align: unset;
 }
-.sign_in.new_login .carousel-control-next, .sign_in.new_login .carousel-control-prev {
+.sign_in.new_login .carousel-control-next,
+.sign_in.new_login .carousel-control-prev {
   width: 11%;
 }
 
@@ -765,6 +766,17 @@ footer .links li a {
 .hotel_filter .hotel_card.small_card .content span {
   -webkit-padding-start: 0 !important;
           padding-inline-start: 0 !important;
+}
+
+.lb-outerContainer {
+  width: 80vw !important;
+  height: 80vh !important;
+}
+.lb-outerContainer img {
+  width: 80vw !important;
+  height: 80vh !important;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .hotel_details .primaryBtn {
@@ -1347,6 +1359,16 @@ footer .links li a {
   }
   .sign_in.new_login .carousel-item img {
     height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .lb-outerContainer {
+    width: 80vw !important;
+    height: 40vh !important;
+  }
+  .lb-outerContainer img {
+    width: 80vw !important;
+    height: 40vh !important;
     -o-object-fit: cover;
        object-fit: cover;
   }
