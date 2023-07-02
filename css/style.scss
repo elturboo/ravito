@@ -733,13 +733,12 @@ footer {
     }
 
     .map {
+        height: 200vh;
         iframe {
             border-radius: 1.3rem;
             height: 100%;
 
         }
-
-        height: 200vh;
     }
 
     .filter_sidebar {
@@ -824,9 +823,14 @@ footer {
         padding: 0;
         color: #4E4E4E;
         position: relative;
-
+        .col-sm-4 {
+            padding-inline-end: 0;
+        }
+        .col-sm-8 {
+            padding-inline-start: 0;
+        }
         .content {
-            padding: 0 .7rem;
+            padding: 1rem 1rem 0 1rem
         }
 
         a.add_favourite {
@@ -849,10 +853,10 @@ footer {
 
         .hotel_img {
             width: 100%;
-            height: 13rem;
+            height: 100%;
             object-fit: cover;
             margin-bottom: .7rem;
-            border-radius: 1rem 1rem 0 0;
+            border-radius: 1rem 0 0 1rem;
         }
 
         .hotel_name {
@@ -865,7 +869,6 @@ footer {
 
         .feat {
             display: flex;
-            justify-content: space-between;
             align-items: center;
             gap: 1rem;
             margin: 1rem 0;
@@ -908,7 +911,7 @@ footer {
         .price-box {
             background: #F8F8F8;
             padding: 1rem;
-            border-radius: 0 0 1rem 1rem;
+            border-radius: 0 0 1rem 0;
 
             h5 {
                 margin-bottom: 0;
@@ -917,10 +920,15 @@ footer {
             .primaryBtn {
                 height: 3rem;
                 font-size: 1rem;
+                min-width: 9rem;
             }
         }
 
         &.small_card {
+            .hotel_img {
+                border-radius: 1rem 1rem 0 0;
+                height: 13rem;
+            }
             .feat {
                 .review {
                     position: absolute;
@@ -939,13 +947,17 @@ footer {
             }
 
             .feat {
-                margin: .5rem;
+                margin: .3rem;
             }
 
             .content {
+                padding-top: 0;
                 span {
                     padding-inline-start: 0 !important;
                 }
+            }
+            .price-box {
+                border-radius: 0 0 1rem 1rem;
             }
         }
     }
@@ -1737,6 +1749,26 @@ footer {
             height: 40vh !important;
             object-fit: cover;
         }
+    }
+    .hotel_filter .hotel_card .col-sm-4 {
+        padding-inline-end:  calc(var(--bs-gutter-x) * .5);
+    }
+    .hotel_filter .hotel_card .col-sm-8 {
+        padding-inline-start:  calc(var(--bs-gutter-x) * .5);
+    }
+    .hotel_filter .hotel_card .hotel_img {
+        border-radius: 1rem 1rem 0 0;
+    }
+    .hotel_filter .hotel_card .right-side {
+        border-inline-start: none;
+        border-top: 1px solid #d4d3d3;
+        padding-top: .5rem;
+        margin-top: .5rem;
+        padding-inline-start: 0;
+
+    }
+    .hotel_filter .hotel_card .price-box {
+        border-radius: 0 0 1rem 1rem;
     }
 }
 

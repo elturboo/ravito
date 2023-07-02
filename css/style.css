@@ -665,8 +665,16 @@ footer .links li a {
   color: #4E4E4E;
   position: relative;
 }
+.hotel_filter .hotel_card .col-sm-4 {
+  -webkit-padding-end: 0;
+          padding-inline-end: 0;
+}
+.hotel_filter .hotel_card .col-sm-8 {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
 .hotel_filter .hotel_card .content {
-  padding: 0 0.7rem;
+  padding: 1rem 1rem 0 1rem;
 }
 .hotel_filter .hotel_card a.add_favourite {
   position: absolute;
@@ -686,11 +694,11 @@ footer .links li a {
 }
 .hotel_filter .hotel_card .hotel_img {
   width: 100%;
-  height: 13rem;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   margin-bottom: 0.7rem;
-  border-radius: 1rem 1rem 0 0;
+  border-radius: 1rem 0 0 1rem;
 }
 .hotel_filter .hotel_card .hotel_name {
   color: #000;
@@ -699,7 +707,6 @@ footer .links li a {
 }
 .hotel_filter .hotel_card .feat {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 1rem;
   margin: 1rem 0;
@@ -738,7 +745,7 @@ footer .links li a {
 .hotel_filter .hotel_card .price-box {
   background: #F8F8F8;
   padding: 1rem;
-  border-radius: 0 0 1rem 1rem;
+  border-radius: 0 0 1rem 0;
 }
 .hotel_filter .hotel_card .price-box h5 {
   margin-bottom: 0;
@@ -746,6 +753,11 @@ footer .links li a {
 .hotel_filter .hotel_card .price-box .primaryBtn {
   height: 3rem;
   font-size: 1rem;
+  min-width: 9rem;
+}
+.hotel_filter .hotel_card.small_card .hotel_img {
+  border-radius: 1rem 1rem 0 0;
+  height: 13rem;
 }
 .hotel_filter .hotel_card.small_card .feat .review {
   position: absolute;
@@ -761,11 +773,17 @@ footer .links li a {
   padding: 0.5rem;
 }
 .hotel_filter .hotel_card.small_card .feat {
-  margin: 0.5rem;
+  margin: 0.3rem;
+}
+.hotel_filter .hotel_card.small_card .content {
+  padding-top: 0;
 }
 .hotel_filter .hotel_card.small_card .content span {
   -webkit-padding-start: 0 !important;
           padding-inline-start: 0 !important;
+}
+.hotel_filter .hotel_card.small_card .price-box {
+  border-radius: 0 0 1rem 1rem;
 }
 
 .lb-outerContainer {
@@ -1371,6 +1389,29 @@ footer .links li a {
     height: 40vh !important;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .hotel_filter .hotel_card .col-sm-4 {
+    -webkit-padding-end: calc(var(--bs-gutter-x) * 0.5);
+            padding-inline-end: calc(var(--bs-gutter-x) * 0.5);
+  }
+  .hotel_filter .hotel_card .col-sm-8 {
+    -webkit-padding-start: calc(var(--bs-gutter-x) * 0.5);
+            padding-inline-start: calc(var(--bs-gutter-x) * 0.5);
+  }
+  .hotel_filter .hotel_card .hotel_img {
+    border-radius: 1rem 1rem 0 0;
+  }
+  .hotel_filter .hotel_card .right-side {
+    -webkit-border-start: none;
+            border-inline-start: none;
+    border-top: 1px solid #d4d3d3;
+    padding-top: 0.5rem;
+    margin-top: 0.5rem;
+    -webkit-padding-start: 0;
+            padding-inline-start: 0;
+  }
+  .hotel_filter .hotel_card .price-box {
+    border-radius: 0 0 1rem 1rem;
   }
 }
 /* galaxy S5 */
