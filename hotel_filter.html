@@ -1,770 +1,1019 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <!-- title -->
     <title>Ravito</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./images/favicon.png">
-    <meta name="description" content="Ravito">
+    <link rel="shortcut icon" href="./images/favicon.png" />
+    <meta name="description" content="Ravito" />
     <!--    first mobile meta-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--    internet explorer compatibility meta-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!--    fontawesome-->
-    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css" />
     <!-- google fonts * cairo * -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <!-- placeholder -->
+    <link rel="stylesheet" href="./css/placeholder-loading.min.css" />
     <!-- RTL Bootstrap  -->
     <!-- <link rel="stylesheet" href="./css/bootstrap.rtl.min.css"> -->
 
-
     <!-- Style file -->
-    <link rel="stylesheet" href="./css/style.css">
-</head>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<body>
+  <body>
     <main>
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarTogglerDemo03"
+              aria-controls="navbarTogglerDemo03"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"
+              ><img class="logo" src="./images/logo.png" alt="logo"
+            /></a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Search</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Orders</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Reporting</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Clients</a>
+                </li>
+              </ul>
 
+              <ul class="navbar-nav right-side ms-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown haveBorder">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img
+                      src="./images/navbar/currency.png"
+                      height="20"
+                      alt="dollar"
+                      class="me-1"
+                    />
+                    USD
+                  </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <li><a class="dropdown-item" href="#">SAR </a></li>
+                  </ul>
+                </li>
 
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                <li class="nav-item dropdown haveBorder">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <img
+                      src="./images/navbar/lang.png"
+                      height="15"
+                      alt="us-flag"
+                      class="me-1"
+                    />
+                    EN
+                  </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <li><a class="dropdown-item" href="#">AR </a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item dropdown haveBorder">
+                  <div class="dropdown spec_profile_dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdownMenuLink"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img
+                        src="./images/navbar/user.png"
+                        height="20"
+                        alt="user"
+                        class="me-1"
+                      />
+                      Company Name
+                    </a>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="navbarDropdownMenuLink"
+                    >
+                      <h5>Compamy Name</h5>
+                      <h6>Compamy Name Agency</h6>
+                      <p class="m-0 text-warning">
+                        <i
+                          class="fa-solid fa-triangle-exclamation text-warning me-2"
+                        ></i>
+                        Please complete your company profile
+                      </p>
+                      <div>
+                        <a href="#" class="fw-bold">Company Profile</a>
+                        <a href="#" class="fw-bold">Logout</a>
+                      </div>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class="dropdown spec_menu_dropdown">
+                    <button
+                      class="btn dropdown-toggle"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img
+                        src="./images/navbar/menu.png"
+                        height="25"
+                        alt="menu"
+                        class=""
+                      />
                     </button>
-                    <a class="navbar-brand" href="index.html"><img class="logo" src="./images/logo.png" alt="logo"></a>
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Search</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Orders</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Reporting</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Clients</a>
-                            </li>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <h6>Search</h6>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><img
+                            src="./images/icons/hotel_black.png"
+                            width="20"
+                            class="me-3"
+                            alt="Hotels"
+                          />Hotels</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><img
+                            src="./images/icons/plane.png"
+                            width="20"
+                            class="me-3"
+                            alt="Air tickets"
+                          />Air tickets</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><img
+                            src="./images/icons/bus.png"
+                            width="20"
+                            class="me-3"
+                            alt="Transfers"
+                          />Transfers</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><img
+                            src="./images/icons/car_black.png"
+                            width="20"
+                            class="me-3"
+                            alt="Car rental"
+                          />Car rental</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          ><img
+                            src="./images/icons/shield.png"
+                            width="20"
+                            class="me-3"
+                            alt="Visa"
+                          />Visa</a
+                        >
+                      </li>
+                      <h6>Orders</h6>
+                      <li><a class="dropdown-item" href="#">Hotels</a></li>
+                      <li><a class="dropdown-item" href="#">Air tickets</a></li>
+                      <li><a class="dropdown-item" href="#">Transfers</a></li>
+                      <li><a class="dropdown-item" href="#">Car rental</a></li>
+                      <li><a class="dropdown-item" href="#">Visa</a></li>
+                      <li><a class="dropdown-item" href="#">Reporting</a></li>
+                      <li><a class="dropdown-item" href="#">Clients</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
 
-                        </ul>
+      <section class="content hotel_filter">
+        <div class="container-fluid">
+          <nav class="breadcrumb" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home page</a></li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Search results
+              </li>
+            </ol>
+          </nav>
 
-                        <ul class="navbar-nav right-side ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item dropdown haveBorder">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="./images/navbar/currency.png" height="20" alt="dollar" class="me-1"> USD
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="#">SAR </a></li>
-
-                                </ul>
-                            </li>
-
-                            <li class="nav-item dropdown haveBorder">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img src="./images/navbar/lang.png" height="15" alt="us-flag" class="me-1"> EN
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="#">AR </a></li>
-
-                                </ul>
-                            </li>
-
-                            <li class="nav-item dropdown haveBorder">
-                                <div class="dropdown spec_profile_dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img src="./images/navbar/user.png" height="20" alt="user" class="me-1">
-                                        Company Name
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <h5>Compamy Name</h5>
-                                        <h6>Compamy Name Agency</h6>
-                                        <p class="m-0 text-warning"><i
-                                                class="fa-solid fa-triangle-exclamation text-warning me-2"></i> Please
-                                            complete your company profile</p>
-                                        <div>
-                                            <a href="#" class="fw-bold">Company Profile</a>
-                                            <a href="#" class="fw-bold">Logout</a>
-                                        </div>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <div class="dropdown spec_menu_dropdown">
-                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img src="./images/navbar/menu.png" height="25" alt="menu" class="">
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <h6>Search</h6>
-                                        <li><a class="dropdown-item" href="#"><img src="./images/icons/hotel_black.png"
-                                                    width="20" class="me-3" alt="Hotels">Hotels</a></li>
-                                        <li><a class="dropdown-item" href="#"><img src="./images/icons/plane.png"
-                                                    width="20" class="me-3" alt="Air tickets">Air tickets</a></li>
-                                        <li><a class="dropdown-item" href="#"><img src="./images/icons/bus.png"
-                                                    width="20" class="me-3" alt="Transfers">Transfers</a></li>
-                                        <li><a class="dropdown-item" href="#"><img src="./images/icons/car_black.png"
-                                                    width="20" class="me-3" alt="Car rental">Car rental</a></li>
-                                        <li><a class="dropdown-item" href="#"><img src="./images/icons/shield.png"
-                                                    width="20" class="me-3" alt="Visa">Visa</a></li>
-                                        <h6>Orders</h6>
-                                        <li><a class="dropdown-item" href="#">Hotels</a></li>
-                                        <li><a class="dropdown-item" href="#">Air tickets</a></li>
-                                        <li><a class="dropdown-item" href="#">Transfers</a></li>
-                                        <li><a class="dropdown-item" href="#">Car rental</a></li>
-                                        <li><a class="dropdown-item" href="#">Visa</a></li>
-                                        <li><a class="dropdown-item" href="#">Reporting</a></li>
-                                        <li><a class="dropdown-item" href="#">Clients</a></li>
-
-                                    </ul>
-                                </div>
-                            </li>
-
-                        </ul>
-
-                    </div>
+          <div class="search_box mb-20">
+            <div class="row">
+              <div class="col-sm-4">
+                <div class="inputGroup">
+                  <label for="destination">Destination</label>
+                  <select name="rooms" id="rooms">
+                    <option hidden>City , Hotel</option>
+                    <option value="2">2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                  </select>
                 </div>
-            </nav>
-
-        </header>
-
-        <section class="content hotel_filter">
-            <div class="container-fluid">
-                <nav class="breadcrumb" aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home page</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Search results</li>
-                    </ol>
-                </nav>
-
-                <div class="search_box mb-20">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="inputGroup">
-                                <label for="destination">Destination</label>
-                                <select name="rooms" id="rooms">
-                                    <option hidden>City , Hotel</option>
-                                    <option value="2">2 Guests</option>
-                                    <option value="3">3 Guests</option>
-                                    <option value="4">4 Guests</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-sm-2">
-                            <div class="inputGroup">
-                                <label for="Check in">Check in</label>
-                                <input name="Check in" type="date">
-                            </div>
-                        </div>
-                        <div class="col-sm-2">
-                            <div class="inputGroup">
-                                <label for="Check in">Check out</label>
-                                <input name="Check in" type="date">
-                            </div>
-                        </div>
-                        <div class="col-sm-2">
-                            <div class="inputGroup">
-                                <label for="destination">1 room for</label>
-                                <select name="rooms" id="rooms">
-                                    <option value="2">2 Guests</option>
-                                    <option value="3">3 Guests</option>
-                                    <option value="4">4 Guests</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-sm-2">
-                            <button class="primaryBtn w-100 mt-20"> <i class="fa fa-search"></i> Search</button>
-                        </div>
-                    </div>
+              </div>
+              <div class="col-sm-2">
+                <div class="inputGroup">
+                  <label for="Check in">Check in</label>
+                  <input name="Check in" type="date" />
                 </div>
-                <div class="row main_row">
-                    <div class="col-sm-7 col-xxl-8">
-                        <div class="title_box mb-20">
-                            <h3>New York: 522 out of 2114 hotels are avaliable</h3>
-                            <p>In your search date</p>
+              </div>
+              <div class="col-sm-2">
+                <div class="inputGroup">
+                  <label for="Check in">Check out</label>
+                  <input name="Check in" type="date" />
+                </div>
+              </div>
+              <div class="col-sm-2">
+                <div class="inputGroup">
+                  <label for="destination">1 room for</label>
+                  <select name="rooms" id="rooms">
+                    <option value="2">2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-sm-2">
+                <button class="primaryBtn w-100 mt-20">
+                  <i class="fa fa-search"></i> Search
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="row main_row">
+            <div class="col-sm-7 col-xxl-8">
+              <div class="title_box mb-20">
+                <h3>New York: 522 out of 2114 hotels are avaliable</h3>
+                <p>In your search date</p>
+              </div>
+              <div class="row">
+                <!-- start side filter -->
+                <div class="col-sm-4 col-xxl-3">
+                  <div class="filter_sidebar" id="myFilter">
+                    <h5>Sort by</h5>
+                    <select name="" id="">
+                      <option value="">Popularity</option>
+                      <option value="">Popularity</option>
+                      <option value="">Popularity</option>
+                    </select>
+                    <hr />
+                    <!-- ================================================== -->
+
+                    <h5>hotel Name</h5>
+                    <input type="text" />
+                    <hr />
+                    <!-- ================================================== -->
+
+                    <h5>Meals</h5>
+                    <div class="checkbox-list">
+                      <div>
+                        <input type="checkbox" id="" />
+                        <label for="">No meals included</label>
+                      </div>
+                      <span>220</span>
+                    </div>
+                    <div class="checkbox-list">
+                      <div>
+                        <input type="checkbox" id="" />
+                        <label for=""
+                          >Breakfast + dinner or lunch included</label
+                        >
+                      </div>
+                      <span>80</span>
+                    </div>
+                    <div class="checkbox-list">
+                      <div>
+                        <input type="checkbox" id="" />
+                        <label for=""
+                          >Breakfast + dinner or lunch included</label
+                        >
+                      </div>
+                      <span>45</span>
+                    </div>
+                    <div class="checkbox-list">
+                      <div>
+                        <input type="checkbox" id="" />
+                        <label for=""
+                          >Breakfast, lunch and dinner included</label
+                        >
+                      </div>
+                      <span>35</span>
+                    </div>
+                    <div class="checkbox-list">
+                      <div>
+                        <input type="checkbox" id="" />
+                        <label for="">All-inclusive</label>
+                      </div>
+                      <span>20</span>
+                    </div>
+                    <hr />
+                    <h5>Star Rating</h5>
+                    <div class="checkbox-list">
+                      <div>
+                        <input type="checkbox" id="" />
+                        <div>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
                         </div>
+                      </div>
+                      <span>20</span>
+                    </div>
+                    <div class="checkbox-list">
+                      <div>
+                        <input type="checkbox" id="" />
+                        <div>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                      </div>
+                      <span>20</span>
+                    </div>
+                    <div class="checkbox-list">
+                      <div>
+                        <input type="checkbox" id="" />
+                        <div>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                      </div>
+                      <span>20</span>
+                    </div>
+                    <div class="checkbox-list">
+                      <div>
+                        <input type="checkbox" id="" />
+                        <div>
+                          <i class="fa fa-star"></i>
+                          <i class="fa fa-star"></i>
+                        </div>
+                      </div>
+                      <span>20</span>
+                    </div>
+                    <div class="checkbox-list">
+                      <div>
+                        <input type="checkbox" id="" />
+                        <div>
+                          <i class="fa fa-star"></i>
+                        </div>
+                      </div>
+                      <span>20</span>
+                    </div>
+
+                    <hr />
+                    <!-- ================================================== -->
+
+                    <h5>Payment and booking</h5>
+                    <div class="checkbox-list">
+                      <div>
+                        <input type="checkbox" id="" />
+                        <label for="">Free cancellation available</label>
+                      </div>
+                      <span>33</span>
+                    </div>
+                    <hr />
+                    <h5>Location</h5>
+                    <label for="" class="d-block w-100"
+                      >from the city center</label
+                    >
+                    <div class="checkbox-list">
+                      <div class="align-items-center">
+                        <input type="range" />
+                        <input type="text" placeholder="0 Km" value="30 Km" />
+                      </div>
+                    </div>
+                    <div class="checkbox-list">
+                      <div>
+                        <input type="checkbox" id="" />
+                        <label for="">Near the metro</label>
+                      </div>
+                      <span>15</span>
+                    </div>
+
+                    <hr />
+                    <!-- ================================================== -->
+
+                    <h5>Reviews rating</h5>
+                    <div class="checkbox-list">
+                      <div>
+                        <input type="checkbox" id="" />
+                        <label for="">Super: 9+</label>
+                      </div>
+                      <span>15</span>
+                    </div>
+                    <div class="checkbox-list">
+                      <div>
+                        <input type="checkbox" id="" />
+                        <label for="">Excellent: 8+</label>
+                      </div>
+                      <span>15</span>
+                    </div>
+                    <div class="checkbox-list">
+                      <div>
+                        <input type="checkbox" id="" />
+                        <label for="">Very good: 7+</label>
+                      </div>
+                      <span>15</span>
+                    </div>
+                    <div class="checkbox-list">
+                      <div>
+                        <input type="checkbox" id="" />
+                        <label for="">Good: 6+</label>
+                      </div>
+                      <span>15</span>
+                    </div>
+                    <div class="checkbox-list">
+                      <div>
+                        <input type="checkbox" id="" />
+                        <label for="">Fairly good: 5+</label>
+                      </div>
+                      <span>15</span>
+                    </div>
+
+                    <hr />
+                    <!-- ================================================== -->
+                    <h5>
+                      Price for a night in <span class="main_color">EGP</span>
+                    </h5>
+                    <div class="checkbox-list">
+                      <div class="d-block">
+                        <div class="mb-10">
+                          <input type="text" placeholder="From" />
+                          <input type="text" placeholder="To" />
+                        </div>
+                        <input class="w-100" type="range" />
+                      </div>
+                    </div>
+                    <!-- ================================================== -->
+                    <hr />
+                    <h5>Facilities and Services</h5>
+                    <h6 class="main_color mt-20">In the hotel</h6>
+                    <div class="checkbox-list">
+                      <div>
+                        <input type="checkbox" id="" />
+                        <label for="">Free Internet</label>
+                      </div>
+                      <span>15</span>
+                    </div>
+                    <div class="checkbox-list">
+                      <div>
+                        <input type="checkbox" id="" />
+                        <label for="">Transfer</label>
+                      </div>
+                      <span>15</span>
+                    </div>
+                    <div class="checkbox-list">
+                      <div>
+                        <input type="checkbox" id="" />
+                        <label for="">Parking</label>
+                      </div>
+                      <span>15</span>
+                    </div>
+                    <div class="checkbox-list">
+                      <div>
+                        <input type="checkbox" id="" />
+                        <label for="">Swimming Pool</label>
+                      </div>
+                      <span>15</span>
+                    </div>
+                    <div class="checkbox-list">
+                      <div>
+                        <input type="checkbox" id="" />
+                        <label for="">Fitness centre</label>
+                      </div>
+                      <span>15</span>
+                    </div>
+                    <div class="checkbox-list">
+                      <div>
+                        <input type="checkbox" id="" />
+                        <label for="">Bar or restaurant</label>
+                      </div>
+                      <span>15</span>
+                    </div>
+                    <div class="checkbox-list">
+                      <div>
+                        <input type="checkbox" id="" />
+                        <label for="">Conference hall</label>
+                      </div>
+                      <span>15</span>
+                    </div>
+                    <div class="checkbox-list">
+                      <div>
+                        <input type="checkbox" id="" />
+                        <label for="">Spa Services</label>
+                      </div>
+                      <span>15</span>
+                    </div>
+                    <div class="checkbox-list">
+                      <div>
+                        <input type="checkbox" id="" />
+                        <label for="">Ski slope nearby</label>
+                      </div>
+                      <span>15</span>
+                    </div>
+                    <div class="checkbox-list">
+                      <div>
+                        <input type="checkbox" id="" />
+                        <label for="">Beach nearby</label>
+                      </div>
+                      <span>15</span>
+                    </div>
+                    <div class="checkbox-list">
+                      <div>
+                        <input type="checkbox" id="" />
+                        <label for="">Jacuzzi</label>
+                      </div>
+                      <span>15</span>
+                    </div>
+                    <div class="checkbox-list">
+                      <div>
+                        <input type="checkbox" id="" />
+                        <label for="">Electric car charging</label>
+                      </div>
+                      <span>15</span>
+                    </div>
+
+                    <h6 class="main_color mt-20">In the room</h6>
+                    <div class="checkbox-list">
+                      <div>
+                        <input type="checkbox" id="" />
+                        <label for="">Air-conditioning</label>
+                      </div>
+                      <span>15</span>
+                    </div>
+                    <div class="checkbox-list">
+                      <div>
+                        <input type="checkbox" id="" />
+                        <label for="">Private Bathroom</label>
+                      </div>
+                      <span>15</span>
+                    </div>
+                    <div class="checkbox-list">
+                      <div>
+                        <input type="checkbox" id="" />
+                        <label for="">Kitchen</label>
+                      </div>
+                      <span>15</span>
+                    </div>
+                    <div class="checkbox-list">
+                      <div>
+                        <input type="checkbox" id="" />
+                        <label for="">Balcony</label>
+                      </div>
+                      <span>15</span>
+                    </div>
+                    <div class="checkbox-list">
+                      <div>
+                        <input type="checkbox" id="" />
+                        <label for="">View from the window</label>
+                      </div>
+                      <span>15</span>
+                    </div>
+                    <!-- ================================================== -->
+                  </div>
+                </div>
+
+                <!-- end side filter -->
+
+                <!-- start hotels cards -->
+
+                <div class="col-sm-8 col-xxl-9">
+                  <div class="row">
+                    <!-- login -->
+
+                    <div class="col-sm-12 col-xxl-12">
+                      <div class="ph-item">
+                        <div class="ph-col-12">
+                          <div class="row">
+                            <div class="col-sm-4">
+                              <div
+                                class="ph-picture"
+                                style="height: 200px"
+                              ></div>
+                            </div>
+                            <div class="col-sm-8">
+                              <div class="ph-row">
+                                <div class="ph-col-8 big"></div>
+                                <div class="ph-col-4 big empty"></div>
+                                <div class="ph-col-6"></div>
+                                <div class="ph-col-6 empty"></div>
+                                <div class="ph-col-6"></div>
+                                <div class="ph-col-6 empty"></div>
+                                <div class="ph-col-12 empty"></div>
+                                <div class="ph-col-6"></div>
+                                <div class="ph-col-6 empty"></div>
+                                <div class="ph-col-6"></div>
+                                <div class="ph-col-6 empty"></div>
+                                <div class="ph-col-12 empty"></div>
+                                <div class="ph-col-4"></div>
+                                <div class="ph-col-8 empty"></div>
+                                <div class="ph-col-6"></div>
+                                <div class="ph-col-2 empty"></div>
+                                <div class="ph-col-4 big"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-12 col-xxl-12">
+                      <div class="hotel_card">
                         <div class="row">
-                            <!-- start side filter -->
-                            <div class="col-sm-4 col-xxl-3">
-                                <div class="filter_sidebar">
-                                    <h5>Sort by</h5>
-                                    <select name="" id="">
-                                        <option value="">Popularity</option>
-                                        <option value="">Popularity</option>
-                                        <option value="">Popularity</option>
-                                    </select>
-                                    <hr>
-                                    <!-- ================================================== -->
-
-                                    <h5>hotel Name</h5>
-                                    <input type="text">
-                                    <hr>
-                                    <!-- ================================================== -->
-
-                                    <h5>Meals</h5>
-                                    <div class="checkbox-list">
-                                        <div>
-                                            <input type="checkbox" id="">
-                                            <label for="">No meals included</label>
-                                        </div>
-                                        <span>220</span>
-                                    </div>
-                                    <div class="checkbox-list">
-                                        <div>
-                                            <input type="checkbox" id="">
-                                            <label for="">Breakfast + dinner or lunch included</label>
-                                        </div>
-                                        <span>80</span>
-                                    </div>
-                                    <div class="checkbox-list">
-                                        <div>
-                                            <input type="checkbox" id="">
-                                            <label for="">Breakfast + dinner or lunch included</label>
-                                        </div>
-                                        <span>45</span>
-                                    </div>
-                                    <div class="checkbox-list">
-                                        <div>
-                                            <input type="checkbox" id="">
-                                            <label for="">Breakfast, lunch and dinner included</label>
-                                        </div>
-                                        <span>35</span>
-                                    </div>
-                                    <div class="checkbox-list">
-                                        <div>
-                                            <input type="checkbox" id="">
-                                            <label for="">All-inclusive</label>
-                                        </div>
-                                        <span>20</span>
-                                    </div>
-                                    <hr>
-                                    <h5>Star Rating</h5>
-                                    <div class="checkbox-list">
-                                        <div>
-                                            <input type="checkbox" id="">
-                                            <div>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <span>20</span>
-                                    </div>
-                                    <div class="checkbox-list">
-                                        <div>
-                                            <input type="checkbox" id="">
-                                            <div>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <span>20</span>
-                                    </div>
-                                    <div class="checkbox-list">
-                                        <div>
-                                            <input type="checkbox" id="">
-                                            <div>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-
-                                            </div>
-                                        </div>
-                                        <span>20</span>
-                                    </div>
-                                    <div class="checkbox-list">
-                                        <div>
-                                            <input type="checkbox" id="">
-                                            <div>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-
-                                            </div>
-                                        </div>
-                                        <span>20</span>
-                                    </div>
-                                    <div class="checkbox-list">
-                                        <div>
-                                            <input type="checkbox" id="">
-                                            <div>
-                                                <i class="fa fa-star"></i>
-
-                                            </div>
-                                        </div>
-                                        <span>20</span>
-                                    </div>
-
-                                    <hr>
-                                    <!-- ================================================== -->
-
-                                    <h5>Payment and booking</h5>
-                                    <div class="checkbox-list">
-                                        <div>
-                                            <input type="checkbox" id="">
-                                            <label for="">Free cancellation available</label>
-                                        </div>
-                                        <span>33</span>
-                                    </div>
-                                    <hr>
-                                    <h5>Location</h5>
-                                    <label for="" class="d-block w-100">from the city center</label>
-                                    <div class="checkbox-list">
-                                        <div class="align-items-center">
-                                            <input type="range">
-                                            <input type="text" placeholder="0 Km" value="30 Km">
-                                        </div>
-                                    </div>
-                                    <div class="checkbox-list">
-                                        <div>
-                                            <input type="checkbox" id="">
-                                            <label for="">Near the metro</label>
-                                        </div>
-                                        <span>15</span>
-                                    </div>
-
-                                    <hr>
-                                    <!-- ================================================== -->
-
-                                    <h5>Reviews rating</h5>
-                                    <div class="checkbox-list">
-                                        <div>
-                                            <input type="checkbox" id="">
-                                            <label for="">Super: 9+</label>
-                                        </div>
-                                        <span>15</span>
-                                    </div>
-                                    <div class="checkbox-list">
-                                        <div>
-                                            <input type="checkbox" id="">
-                                            <label for="">Excellent: 8+</label>
-                                        </div>
-                                        <span>15</span>
-                                    </div>
-                                    <div class="checkbox-list">
-                                        <div>
-                                            <input type="checkbox" id="">
-                                            <label for="">Very good: 7+</label>
-                                        </div>
-                                        <span>15</span>
-                                    </div>
-                                    <div class="checkbox-list">
-                                        <div>
-                                            <input type="checkbox" id="">
-                                            <label for="">Good: 6+</label>
-                                        </div>
-                                        <span>15</span>
-                                    </div>
-                                    <div class="checkbox-list">
-                                        <div>
-                                            <input type="checkbox" id="">
-                                            <label for="">Fairly good: 5+</label>
-                                        </div>
-                                        <span>15</span>
-                                    </div>
-
-                                    <hr>
-                                    <!-- ================================================== -->
-                                    <h5>Price for a night in <span class="main_color">EGP</span></h5>
-                                    <div class="checkbox-list">
-                                        <div class="d-block">
-                                            <div class="mb-10">
-                                                <input type="text" placeholder="From">
-                                                <input type="text" placeholder="To">
-                                            </div>
-                                            <input class=" w-100" type="range">
-                                        </div>
-
-                                    </div>
-                                    <!-- ================================================== -->
-                                    <hr>
-                                    <h5>Facilities and Services</h5>
-                                    <h6 class="main_color mt-20">In the hotel</h6>
-                                    <div class="checkbox-list">
-                                        <div>
-                                            <input type="checkbox" id="">
-                                            <label for="">Free Internet</label>
-                                        </div>
-                                        <span>15</span>
-                                    </div>
-                                    <div class="checkbox-list">
-                                        <div>
-                                            <input type="checkbox" id="">
-                                            <label for="">Transfer</label>
-                                        </div>
-                                        <span>15</span>
-                                    </div>
-                                    <div class="checkbox-list">
-                                        <div>
-                                            <input type="checkbox" id="">
-                                            <label for="">Parking</label>
-                                        </div>
-                                        <span>15</span>
-                                    </div>
-                                    <div class="checkbox-list">
-                                        <div>
-                                            <input type="checkbox" id="">
-                                            <label for="">Swimming Pool</label>
-                                        </div>
-                                        <span>15</span>
-                                    </div>
-                                    <div class="checkbox-list">
-                                        <div>
-                                            <input type="checkbox" id="">
-                                            <label for="">Fitness centre</label>
-                                        </div>
-                                        <span>15</span>
-                                    </div>
-                                    <div class="checkbox-list">
-                                        <div>
-                                            <input type="checkbox" id="">
-                                            <label for="">Bar or restaurant</label>
-                                        </div>
-                                        <span>15</span>
-                                    </div>
-                                    <div class="checkbox-list">
-                                        <div>
-                                            <input type="checkbox" id="">
-                                            <label for="">Conference hall</label>
-                                        </div>
-                                        <span>15</span>
-                                    </div>
-                                    <div class="checkbox-list">
-                                        <div>
-                                            <input type="checkbox" id="">
-                                            <label for="">Spa Services</label>
-                                        </div>
-                                        <span>15</span>
-                                    </div>
-                                    <div class="checkbox-list">
-                                        <div>
-                                            <input type="checkbox" id="">
-                                            <label for="">Ski slope nearby</label>
-                                        </div>
-                                        <span>15</span>
-                                    </div>
-                                    <div class="checkbox-list">
-                                        <div>
-                                            <input type="checkbox" id="">
-                                            <label for="">Beach nearby</label>
-                                        </div>
-                                        <span>15</span>
-                                    </div>
-                                    <div class="checkbox-list">
-                                        <div>
-                                            <input type="checkbox" id="">
-                                            <label for="">Jacuzzi</label>
-                                        </div>
-                                        <span>15</span>
-                                    </div>
-                                    <div class="checkbox-list">
-                                        <div>
-                                            <input type="checkbox" id="">
-                                            <label for="">Electric car charging</label>
-                                        </div>
-                                        <span>15</span>
-                                    </div>
-
-                                    <h6 class="main_color mt-20">In the room</h6>
-                                    <div class="checkbox-list">
-                                        <div>
-                                            <input type="checkbox" id="">
-                                            <label for="">Air-conditioning</label>
-                                        </div>
-                                        <span>15</span>
-                                    </div>
-                                    <div class="checkbox-list">
-                                        <div>
-                                            <input type="checkbox" id="">
-                                            <label for="">Private Bathroom</label>
-                                        </div>
-                                        <span>15</span>
-                                    </div>
-                                    <div class="checkbox-list">
-                                        <div>
-                                            <input type="checkbox" id="">
-                                            <label for="">Kitchen</label>
-                                        </div>
-                                        <span>15</span>
-                                    </div>
-                                    <div class="checkbox-list">
-                                        <div>
-                                            <input type="checkbox" id="">
-                                            <label for="">Balcony</label>
-                                        </div>
-                                        <span>15</span>
-                                    </div>
-                                    <div class="checkbox-list">
-                                        <div>
-                                            <input type="checkbox" id="">
-                                            <label for="">View from the window</label>
-                                        </div>
-                                        <span>15</span>
-                                    </div>
-                                    <!-- ================================================== -->
-
+                          <div class="col-sm-4">
+                            <img
+                              class="hotel_img"
+                              src="./images/hotels/1.png"
+                              alt=""
+                            />
+                            <a class="add_favourite" href="#"
+                              ><i class="fa-regular fa-heart"></i
+                            ></a>
+                          </div>
+                          <div class="col-sm-8">
+                            <div class="content">
+                              <a href="#">
+                                <h2 class="hotel_name">
+                                  Holiday Inn Express New York
+                                </h2>
+                              </a>
+                              <div class="starts mb-2">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                              </div>
+                              <a href="#"
+                                ><i
+                                  class="fa-solid fa-location-dot text-black-50"
+                                ></i>
+                                <span class="main_color">
+                                  consectetur adipiscing elit. Nam
+                                  ultricies</span
+                                >
+                              </a>
+                              <span class="d-block ps-3"
+                                >3.8 km from the New York center</span
+                              >
+                              <span class="d-block ps-3"
+                                >1.2 km from Times Square – 42nd Street</span
+                              >
+                              <div class="feat">
+                                <div class="review">
+                                  <span class="fw-bold">8.2</span>
+                                  <span>1255 reviews</span>
                                 </div>
-                            </div>
-
-                            <!-- end side filter -->
-
-                            <!-- start hotels cards -->
-
-                            <div class="col-sm-8 col-xxl-9">
-                                <div class="row">
-
-                                    <!-- login -->
-                                    <div class="col-sm-12 col-xxl-12">
-                                        <div class="hotel_card">
-                                            <div class="row">
-                                                <div class="col-sm-4">
-                                                    <img class="hotel_img" src="./images/hotels/1.png" alt="">
-                                                    <a class="add_favourite" href="#"><i
-                                                            class="fa-regular fa-heart"></i></a>
-
-                                                </div>
-                                                <div class="col-sm-8">
-                                                    <div class="content">
-                                                        <a href="#">
-                                                            <h2 class="hotel_name">Holiday Inn Express New York</h2>
-                                                        </a>
-                                                        <div class="starts mb-2">
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                        </div>
-                                                        <a href="#"><i
-                                                                class="fa-solid fa-location-dot text-black-50"></i>
-                                                            <span class="main_color"> consectetur adipiscing elit. Nam
-                                                                ultricies</span>
-                                                        </a>
-                                                        <span class="d-block ps-3">3.8 km from the New York
-                                                            center</span>
-                                                        <span class="d-block ps-3">1.2 km from Times Square – 42nd
-                                                            Street</span>
-                                                        <div class="feat">
-                                                            <div class="review"><span class="fw-bold">8.2</span>
-                                                                <span>1255
-                                                                    reviews</span></div>
-                                                            <div class="feat-list">
-                                                                <img src="./images/icons/wifi.png" height="16" alt="">
-                                                                <img src="./images/icons/car.png" height="15" alt="">
-                                                                <img src="./images/icons/parking.png" height="17"
-                                                                    alt="">
-                                                                <img src="./images/icons/baby.png" height="20" alt="">
-                                                                <img src="./images/icons/gym.png" height="15" alt="">
-                                                                <img src="./images/icons/food.png" height="20" alt="">
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-sm-6">
-                                                                <h3 class="classification-type">Deluxe Double Family
-                                                                    room</h3>
-                                                                <span>twin beds</span>
-                                                            </div>
-                                                            <div class="col-sm-6">
-                                                                <ul class="list-unstyled right-side">
-                                                                    <li class="sec_color"><i
-                                                                            class="fa-solid fa-utensils me-2"></i>Breakfast
-                                                                        incl
-                                                                    </li>
-                                                                    <li><i class="fa-solid fa-dollar-sign me-2"></i> No
-                                                                        free
-                                                                        cancellation</li>
-                                                                    <li><i class="fa-solid fa-wallet me-2"></i>Pay by
-                                                                        wire
-                                                                        transfer</li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                    <div
-                                                        class="price-box d-flex justify-content-between align-items-center">
-                                                        <div>
-                                                            <h5 class="fw-bold">EGP 10,250</h5>
-                                                            <span>for a night for 2 guests</span>
-                                                        </div>
-                                                        <a href="#" class="primaryBtn">Show all rooms</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-
-                                    <!-- not login -->
-                                    <div class="col-sm-12 col-xxl-12">
-                                        <div class="hotel_card">
-                                            <div class="row">
-                                                <div class="col-sm-4">
-                                                    <img class="hotel_img" src="./images/hotels/1.png" alt="">
-                                                    <a class="add_favourite" href="#"><i
-                                                            class="fa-regular fa-heart"></i></a>
-
-                                                </div>
-                                                <div class="col-sm-8">
-                                                    <div class="content">
-                                                        <a href="#">
-                                                            <h2 class="hotel_name">Holiday Inn Express New York</h2>
-                                                        </a>
-                                                        <div class="starts mb-2">
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                            <i class="fa-solid fa-star"></i>
-                                                        </div>
-                                                        <a href="#"><i
-                                                                class="fa-solid fa-location-dot text-black-50"></i>
-                                                            <span class="main_color"> consectetur adipiscing elit. Nam
-                                                                ultricies</span>
-                                                        </a>
-                                                        <span class="d-block ps-3">3.8 km from the New York
-                                                            center</span>
-                                                        <span class="d-block ps-3">1.2 km from Times Square – 42nd
-                                                            Street</span>
-                                                        <div class="feat">
-                                                            <div class="review"><span class="fw-bold">8.2</span>
-                                                                <span>1255
-                                                                    reviews</span></div>
-                                                            <div class="feat-list">
-                                                                <img src="./images/icons/wifi.png" height="16" alt="">
-                                                                <img src="./images/icons/car.png" height="15" alt="">
-                                                                <img src="./images/icons/parking.png" height="17"
-                                                                    alt="">
-                                                                <img src="./images/icons/baby.png" height="20" alt="">
-                                                                <img src="./images/icons/gym.png" height="15" alt="">
-                                                                <img src="./images/icons/food.png" height="20" alt="">
-                                                            </div>
-                                                        </div>
-
-                                                        <!-- add class d-none if not login -->
-                                                        <div class="row d-none">
-                                                            <div class="col-sm-6">
-                                                                <h3 class="classification-type">Deluxe Double Family
-                                                                    room</h3>
-                                                                <span>twin beds</span>
-                                                            </div>
-                                                            <div class="col-sm-6">
-                                                                <ul class="list-unstyled right-side">
-                                                                    <li class="sec_color"><i
-                                                                            class="fa-solid fa-utensils me-2"></i>Breakfast
-                                                                        incl
-                                                                    </li>
-                                                                    <li><i class="fa-solid fa-dollar-sign me-2"></i> No
-                                                                        free
-                                                                        cancellation</li>
-                                                                    <li><i class="fa-solid fa-wallet me-2"></i>Pay by
-                                                                        wire
-                                                                        transfer</li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-                                                    <div
-                                                        class="price-box d-flex justify-content-between align-items-center">
-                                                        <div>
-
-
-
-                                                            <span class="sec_color">Login to see the price</span>
-                                                        </div>
-                                                        <a href="#" class="primaryBtn">Login</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-
+                                <div class="feat-list">
+                                  <img
+                                    src="./images/icons/wifi.png"
+                                    height="16"
+                                    alt=""
+                                  />
+                                  <img
+                                    src="./images/icons/car.png"
+                                    height="15"
+                                    alt=""
+                                  />
+                                  <img
+                                    src="./images/icons/parking.png"
+                                    height="17"
+                                    alt=""
+                                  />
+                                  <img
+                                    src="./images/icons/baby.png"
+                                    height="20"
+                                    alt=""
+                                  />
+                                  <img
+                                    src="./images/icons/gym.png"
+                                    height="15"
+                                    alt=""
+                                  />
+                                  <img
+                                    src="./images/icons/food.png"
+                                    height="20"
+                                    alt=""
+                                  />
                                 </div>
-
+                              </div>
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <h3 class="classification-type">
+                                    Deluxe Double Family room
+                                  </h3>
+                                  <span>twin beds</span>
+                                </div>
+                                <div class="col-sm-6">
+                                  <ul class="list-unstyled right-side">
+                                    <li class="sec_color">
+                                      <i class="fa-solid fa-utensils me-2"></i
+                                      >Breakfast incl
+                                    </li>
+                                    <li>
+                                      <i
+                                        class="fa-solid fa-dollar-sign me-2"
+                                      ></i>
+                                      No free cancellation
+                                    </li>
+                                    <li>
+                                      <i class="fa-solid fa-wallet me-2"></i>Pay
+                                      by wire transfer
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
                             </div>
-                            <!-- end hotels cards -->
+                            <div
+                              class="price-box d-flex justify-content-between align-items-center"
+                            >
+                              <div>
+                                <h5 class="fw-bold">EGP 10,250</h5>
+                                <span>for a night for 2 guests</span>
+                              </div>
+                              <a href="#" class="primaryBtn">Show all rooms</a>
+                            </div>
+                          </div>
                         </div>
+                      </div>
                     </div>
-                    <div class="col-sm-5 col-xxl-4 ">
-                        <div class="map position-relative" style="width: 100%"><iframe width="100%" height="600"
-                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+
+                    <!-- not login -->
+                    <div class="col-sm-12 col-xxl-12">
+                      <div class="hotel_card">
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <img
+                              class="hotel_img"
+                              src="./images/hotels/1.png"
+                              alt=""
+                            />
+                            <a class="add_favourite" href="#"
+                              ><i class="fa-regular fa-heart"></i
+                            ></a>
+                          </div>
+                          <div class="col-sm-8">
+                            <div class="content">
+                              <a href="#">
+                                <h2 class="hotel_name">
+                                  Holiday Inn Express New York
+                                </h2>
+                              </a>
+                              <div class="starts mb-2">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                              </div>
+                              <a href="#"
+                                ><i
+                                  class="fa-solid fa-location-dot text-black-50"
+                                ></i>
+                                <span class="main_color">
+                                  consectetur adipiscing elit. Nam
+                                  ultricies</span
+                                >
+                              </a>
+                              <span class="d-block ps-3"
+                                >3.8 km from the New York center</span
+                              >
+                              <span class="d-block ps-3"
+                                >1.2 km from Times Square – 42nd Street</span
+                              >
+                              <div class="feat">
+                                <div class="review">
+                                  <span class="fw-bold">8.2</span>
+                                  <span>1255 reviews</span>
+                                </div>
+                                <div class="feat-list">
+                                  <img
+                                    src="./images/icons/wifi.png"
+                                    height="16"
+                                    alt=""
+                                  />
+                                  <img
+                                    src="./images/icons/car.png"
+                                    height="15"
+                                    alt=""
+                                  />
+                                  <img
+                                    src="./images/icons/parking.png"
+                                    height="17"
+                                    alt=""
+                                  />
+                                  <img
+                                    src="./images/icons/baby.png"
+                                    height="20"
+                                    alt=""
+                                  />
+                                  <img
+                                    src="./images/icons/gym.png"
+                                    height="15"
+                                    alt=""
+                                  />
+                                  <img
+                                    src="./images/icons/food.png"
+                                    height="20"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+
+                              <!-- add class d-none if not login -->
+                              <div class="row d-none">
+                                <div class="col-sm-6">
+                                  <h3 class="classification-type">
+                                    Deluxe Double Family room
+                                  </h3>
+                                  <span>twin beds</span>
+                                </div>
+                                <div class="col-sm-6">
+                                  <ul class="list-unstyled right-side">
+                                    <li class="sec_color">
+                                      <i class="fa-solid fa-utensils me-2"></i
+                                      >Breakfast incl
+                                    </li>
+                                    <li>
+                                      <i
+                                        class="fa-solid fa-dollar-sign me-2"
+                                      ></i>
+                                      No free cancellation
+                                    </li>
+                                    <li>
+                                      <i class="fa-solid fa-wallet me-2"></i>Pay
+                                      by wire transfer
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div
+                              class="price-box d-flex justify-content-between align-items-center"
+                            >
+                              <div>
+                                <span class="sec_color"
+                                  >Login to see the price</span
+                                >
+                              </div>
+                              <a href="#" class="primaryBtn">Login</a>
+                            </div>
+                          </div>
                         </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-
+                <!-- end hotels cards -->
+              </div>
             </div>
-        </section>
-
-        <!-- start footer -->
-        <footer>
-            <div class="container">
-
-                <div class="row">
-                    <div class="col-sm-4">
-                        <a href="index.html"> <img src="./images/logo.png" height="50" alt="footer_logo"
-                                class="logo mb-30"></a>
-                        <ul class="list-unstyled list-inline d-flex gap-3">
-                            <li class="list-inline-item"><a href="#"><img height="25"
-                                        src="./images/social/instagram.png" alt="instagram"></a></li>
-                            <li class="list-inline-item"><a href="#"><img height="25" src="./images/social/facebook.png"
-                                        alt="facebook"></a></li>
-                            <li class="list-inline-item"><a href="#"><img height="25" src="./images/social/twitter.png"
-                                        alt="twitter"></a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-2">
-                        <ul class="list-unstyled links">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">FAQ</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-2">
-                        <ul class="list-unstyled links">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">FAQ</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-2">
-                        <ul class="list-unstyled links">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">FAQ</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-2">
-                        <ul class="list-unstyled links">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">FAQ</a></li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="col-sm-5 col-xxl-4">
+              <div class="map position-relative" style="width: 100%">
+                <iframe
+                  width="100%"
+                  height="600"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                  src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                ></iframe>
+              </div>
             </div>
-        </footer>
-        <!-- end footer -->
+          </div>
+        </div>
+      </section>
 
+      <!-- start footer -->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <a href="index.html">
+                <img
+                  src="./images/logo.png"
+                  height="50"
+                  alt="footer_logo"
+                  class="logo mb-30"
+              /></a>
+              <ul class="list-unstyled list-inline d-flex gap-3">
+                <li class="list-inline-item">
+                  <a href="#"
+                    ><img
+                      height="25"
+                      src="./images/social/instagram.png"
+                      alt="instagram"
+                  /></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"
+                    ><img
+                      height="25"
+                      src="./images/social/facebook.png"
+                      alt="facebook"
+                  /></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"
+                    ><img
+                      height="25"
+                      src="./images/social/twitter.png"
+                      alt="twitter"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-2">
+              <ul class="list-unstyled links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-2">
+              <ul class="list-unstyled links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-2">
+              <ul class="list-unstyled links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-2">
+              <ul class="list-unstyled links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end footer -->
     </main>
 
     <!--  Bootstrap-->
@@ -774,7 +1023,7 @@
     <!--    wow.js file-->
     <script src="./js/wow.min.js"></script>
     <script>
-        new WOW().init();
+      new WOW().init();
     </script>
     <!-- jquery -->
     <script src="./js/jquery-1.12.3.min.js"></script>
@@ -784,6 +1033,5 @@
     <script src="./js/lightbox.min.js"></script>
     <!--    My JS Code   -->
     <script src="./js/main.js"></script>
-</body>
-
+  </body>
 </html>

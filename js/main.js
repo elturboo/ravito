@@ -148,3 +148,19 @@ checkboxes.forEach(function (checkbox, ) {
 $("#closeRooms").click(function() {
   $(this).closest(".dropdown-menu").prev().dropdown("toggle");
 });
+
+var filterHeight = document.getElementById('myFilter'). offsetHeight;//includes margin,border,padding
+
+console.log(filterHeight)
+
+$(window).scroll(function () {
+  if ($(this).scrollTop() > filterHeight) {
+      $(".navbar").css("background-color", "#1d6699");
+  
+
+  } else {
+      $(".navbar").css("background", "transparent");
+
+
+  }
+});
