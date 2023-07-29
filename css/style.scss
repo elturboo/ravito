@@ -224,6 +224,17 @@ label.requierd {
   }
 }
 
+.greyBtn {
+  @extend %defaultButton;
+  border: 2px solid #E1E1E1;
+  background: #E1E1E1;
+  color: #555;
+
+  &:hover {
+    color: #222;
+  }
+}
+
 .outlineBtn {
   @extend %defaultButton;
   background-color: transparent;
@@ -259,7 +270,7 @@ nav.breadcrumb {
     margin-bottom: 0;
   }
 
-  .breadcrumb-item + .breadcrumb-item::before {
+  .breadcrumb-item+.breadcrumb-item::before {
     content: var(--bs-breadcrumb-divider, ">");
   }
 }
@@ -357,7 +368,7 @@ header {
       outline: none;
     }
 
-    .btn-check:focus + .btn,
+    .btn-check:focus+.btn,
     .btn:focus {
       box-shadow: unset;
     }
@@ -601,7 +612,7 @@ footer {
           }
         }
 
-        input.active + .all {
+        input.active+.all {
           background: $secColor;
           color: #fff;
         }
@@ -706,6 +717,7 @@ footer {
 
   .map {
     height: 200vh;
+
     iframe {
       border-radius: 1.3rem;
       height: 100%;
@@ -794,12 +806,15 @@ footer {
     padding: 0;
     color: #4e4e4e;
     position: relative;
+
     .col-sm-4 {
       padding-inline-end: 0;
     }
+
     .col-sm-8 {
       padding-inline-start: 0;
     }
+
     .content {
       padding: 1rem 1rem 0 1rem;
     }
@@ -897,6 +912,7 @@ footer {
         border-radius: 1rem 1rem 0 0;
         height: 13rem;
       }
+
       .feat {
         .review {
           position: absolute;
@@ -920,10 +936,12 @@ footer {
 
       .content {
         padding-top: 0;
+
         span {
           padding-inline-start: 0 !important;
         }
       }
+
       .price-box {
         border-radius: 0 0 1rem 1rem;
       }
@@ -1619,9 +1637,172 @@ footer {
     color: #9999b3;
   }
 }
+
 .min-vh-60 {
   min-height: 60vh;
 }
+
+// company pages
+.com_register {
+  min-height: calc(100vh - 90px);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  .inputGroup {
+    margin-bottom: .5rem !important;
+  }
+
+  .sign_box {
+    h2 {
+      color: $secColor;
+      background: transparent;
+      font-size: 1.5rem;
+    }
+
+    input[type="file"] {
+      background: transparent;
+      opacity: 0;
+      padding: 0;
+    }
+
+    label.for_logo {
+      color: #bbb;
+      cursor: pointer;
+    }
+  }
+}
+
+.company_section {
+  min-height: calc(100vh - 90px);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  .steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: .5rem;
+    background: #F8F8F8;
+    margin-bottom: 2rem;
+
+    .space {
+      background: #D5D5D5;
+      height: 2px;
+      width: 40%;
+
+      &.active {
+        background: $mainColor;
+      }
+    }
+
+    .step {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: .5rem;
+
+      p {
+        margin: 0;
+      }
+
+      span {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        color: #fff;
+
+        justify-content: center;
+        align-items: center;
+        background: #ccc;
+        border-radius: 50%;
+      }
+
+      &.active span {
+        background: $mainColor;
+      }
+    }
+
+  }
+
+  .provider_box {
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #F8F8F8;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+
+    .heading {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+
+      img {
+        height: 60px;
+        width: 70px;
+        object-fit: contain;
+        border-radius: .5rem;
+        border: 1px solid #ccc;
+      }
+
+      .chooce {
+        display: flex;
+        gap: .4rem;
+        align-items: center;
+
+        input[type="checkbox"] {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+    }
+  }
+
+  .company_tab {
+    background: #F8F8F8;
+
+    li {
+      padding: 0.8rem 0.2rem;
+      text-align: center;
+
+      &.active {
+        border-bottom: 3px solid $mainColor;
+      }
+
+      &:not(:last-child) {
+        margin-inline-end: 2rem;
+      }
+    }
+
+    a {
+      color: #4e4e4e;
+      font-size: 1rem;
+      font-weight: 600;
+
+    }
+  }
+  .info-box {
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #F8F8F8;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    .inputGroup {
+      margin-bottom: .5rem !important;
+    }
+    input[type="file"] {
+      background: transparent;
+      opacity: 0;
+      padding: 0;
+    }
+
+    label.for_logo {
+      color: #bbb;
+      cursor: pointer;
+    }
+  }
+}
+
 /* Responsive */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -1691,6 +1872,7 @@ footer {
     height: 100%;
     object-fit: cover;
   }
+
   .lb-outerContainer {
     width: 80vw !important;
     height: 40vh !important;
@@ -1701,15 +1883,19 @@ footer {
       object-fit: cover;
     }
   }
+
   .hotel_filter .hotel_card .col-sm-4 {
     padding-inline-end: calc(var(--bs-gutter-x) * 0.5);
   }
+
   .hotel_filter .hotel_card .col-sm-8 {
     padding-inline-start: calc(var(--bs-gutter-x) * 0.5);
   }
+
   .hotel_filter .hotel_card .hotel_img {
     border-radius: 1rem 1rem 0 0;
   }
+
   .hotel_filter .hotel_card .right-side {
     border-inline-start: none;
     border-top: 1px solid #d4d3d3;
@@ -1717,30 +1903,26 @@ footer {
     margin-top: 0.5rem;
     padding-inline-start: 0;
   }
+
   .hotel_filter .hotel_card .price-box {
     border-radius: 0 0 1rem 1rem;
   }
 }
 
 /* galaxy S5 */
-@media only screen and (min-width: 359px) and (max-width: 361px) {
-}
+@media only screen and (min-width: 359px) and (max-width: 361px) {}
 
 /* iphone x, 6/7/8 */
-@media only screen and (min-width: 375px) and (max-width: 380px) {
-}
+@media only screen and (min-width: 375px) and (max-width: 380px) {}
 
 /* iphone 6/7/8 plus */
-@media only screen and (min-width: 410px) and (max-width: 416px) {
-}
+@media only screen and (min-width: 410px) and (max-width: 416px) {}
 
 /* ipad */
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-}
+@media only screen and (min-width: 768px) and (max-width: 992px) {}
 
 /* ipad pro  */
-@media only screen and (min-width: 1024px) and (max-width: 1030px) {
-}
+@media only screen and (min-width: 1024px) and (max-width: 1030px) {}
 
 /* 17 inch */
 @media only screen and (min-width: 1920px) and (max-width: 2500px) {
