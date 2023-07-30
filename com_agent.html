@@ -142,120 +142,109 @@
 
         </header>
 
-        <section class="company_section">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-6">
-                        <div class="comapny_box">            
-                            <h2 class="sec_color text-center mb-4">Complete your company profile</h2>
-                            <div class="steps">
-                                <div class="step active">
-                                    <span>1</span>
-                                    <p>  Your Information</p> 
-                                </div>
-                                <div class="space active"></div>
-                                <div class="step active">
-                                    <span>2</span>
-                                    <p>Provider Companies</p> 
-                                </div>
-                            </div>
+        <section class="company_section pt-0">
+            <ul class="list-unstyled list-inline company_tab">
+                <div class="container">
+                    <li class=" list-inline-item">
+                        <a href="#"> Company information</a>
+                    </li>
+                    <li class=" list-inline-item">
+                        <a href="#"> Provider companies</a>
+                    </li>
+                    <li class=" list-inline-item">
+                        <a href="#"> Wallet</a>
+                    </li>
 
-                            <form action="">
-                                    <h5 class="text-black mb-2">Select provider companys</h5>
-                               <div class="provider_box">
-                                <div class="heading">
-                                    <img src="./images/provider/1.png" alt="">
-                                    <div class="chooce">
-                                        <input type="checkbox" name="Rate howk" id="Rate howk">
-                                        <label for="Rate howk">Rate howk</label>
-                                    </div>
+                    <li class=" list-inline-item">
+                        <a href="#"> Admin information</a>
+                    </li>
 
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <div class="inputGroup mb-0">
-                                            <label class="requierd" for="Api Key">Api Key </label>
-                                            <input name="Api Key" type="text" placeholder="Api Key">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="inputGroup mb-0">
-                                            <label class="requierd" for="Add Wallet Balance">Add Wallet Balance </label>
-                                            <input name="Add Wallet Balance" type="text" placeholder="Add Wallet Balance">
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                               </div>
-                               <div class="provider_box">
-                                <div class="heading">
-                                    <img src="./images/provider/2.png" alt="">
-                                    <div class="chooce">
-                                        <input type="checkbox" name="Rate howk" id="Rate howk">
-                                        <label for="Rate howk">Hotel & beds</label>
-                                    </div>
+                    <li class="active list-inline-item">
+                        <a href="#"> Agents</a>
+                    </li>
 
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <div class="inputGroup mb-0">
-                                            <label class="requierd" for="Api Key">Api Key </label>
-                                            <input name="Api Key" type="text" placeholder="Api Key">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="inputGroup mb-0">
-                                            <label class="requierd" for="Add Wallet Balance">Add Wallet Balance </label>
-                                            <input name="Add Wallet Balance" type="text" placeholder="Add Wallet Balance">
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                               </div>
-                               <div class="provider_box">
-                                <div class="heading">
-                                    <img src="./images/provider/3.png" alt="">
-                                    <div class="chooce">
-                                        <input type="checkbox" name="Rate howk" id="Rate howk">
-                                        <label for="Rate howk">Rate howk</label>
-                                    </div>
 
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <div class="inputGroup mb-0">
-                                            <label class="requierd" for="Api Key">Api Key </label>
-                                            <input name="Api Key" type="text" placeholder="Api Key">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="inputGroup mb-0">
-                                            <label class="requierd" for="Add Wallet Balance">Add Wallet Balance </label>
-                                            <input name="Add Wallet Balance" type="text" placeholder="Add Wallet Balance">
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                               </div>
-                               <div class="row">
-         
-                             
-                                <div class="col-sm-7">
-                                    <button  type="submit" class="primaryBtn mt-20 w-100 mb-10">Submit</button>
+                </div>
+            </ul>
 
-                                </div>
-                                <div class="col-sm-5">
-                                    <a href="com_complete_profile_two.html" class="greyBtn mt-20 w-100 mb-10">Back </a>
-
-                                </div>
-                               </div>
-
-                            </form>
-                        </div>
+            <div class="container py-3 orders">
+               <div class="row">
+                <div class="col-sm-5">
+                    <h4 class="text-black fw-bold">
+                        Agent
+                    </h4>
+                </div>
+                <div class="col-sm-5">
+                    <div class="inputGroup position-relative mt-0">
+                        <label for="search">Search By Users</label>
+                        <input name="search" type="text" placeholder="Name, email, phone number">
+                        <i class="search_icon fa fa-search"></i>
                     </div>
                 </div>
-            
-          
+                <div class="col-sm-2">
+                    <a class="primaryBtn w-100" href="com_agent_add_user.html">Add A User <i class="fa fa-user-plus"></i></a>
+                </div>
+               </div>
+               <div class="row">
+                <div class="col-sm-12">
+                    <div class="add_new_agent_box d-flex justify-content-center align-items-center gap-2 flex-column">
+                        <i class="fa fa-user"></i>
+                        <h5>Add New Agent</h5>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                        <!-- card one -->
+                <div class="order_card">
+                    <div class="action_bar align-items-center justify-content-center">
+                    
+                        <div class="btn-group dropup">
+                            <button type="button" class="btn dropdown-toggle p-0" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <!-- Dropdown menu links -->
+                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                <li><a class="dropdown-item red_color" href="#">Delete Agent</a></li>
+                             
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content_box">
+                        <div class="row">
+                            <div class="col-sm-2 col-6">
+                                <h6>User name</h6>
+                                <h5 class="fw-bold">Ahmed Mohammed</h5>
+                            </div>
+                            <div class="col-sm-2 col-6">
+                                <h6> Member's ID</h6>
+                                <h5>2262532323232</h5>
+                            </div>
+                            <div class="col-sm-2 col-6">
+                                <h6>Phone number </h6>
+                                <h5>0123456789</h5>
+                            </div>
+                            <div class="col-sm-2 col-12">
+                                <h6>Email </h6>
+                                <h5>email@email.com</h5>
+                            </div>
+                            <div class="col-sm-2 col-6">
+                                <h6>Wallet balance </h6>
+                                <h5>$ 1000  <a class="ms-4" href="user_wallet_details.html">Details</a></h5>
+                            </div>
+                            <div class="col-sm-2 col-6">
+                                <h6>User booking </h6>
+                                <h5>20 <a class="ms-4" href="user_booking_details.html">Details</a></h5>
+                            </div>
+                        </div>
+
+                     
+
+                    </div>
+                </div>
+                </div>
+               </div>
+            </div>
         </section>
 
 

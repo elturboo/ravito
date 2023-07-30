@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -19,21 +19,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+      rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!-- RTL Bootstrap  -->
     <!-- <link rel="stylesheet" href="./css/bootstrap.rtl.min.css"> -->
-
-
-    <!-- Style file -->
+  
+  
+   <!-- Style file -->
     <link rel="stylesheet" href="./css/style.css">
-</head>
+  </head>
 
 <body>
     <main>
-
-
         <header>
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
@@ -142,138 +140,216 @@
 
         </header>
 
-        <section class="company_section">
+        <section class="content orders">
+      
+
+            <!-- filter types -->
+            <div class="filter_types">
+                <div class="container">
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item active"><a href="#">Orders without invoices</a></li>
+                        <li class="list-inline-item"><a href="#">Unpaid invoices</a></li>
+                        <li class="list-inline-item"><a href="#">Transaction monitoring</a></li>
+                        <li class="list-inline-item"><a href="#">Reconciliation</a></li>
+                        <li class="list-inline-item"><a href="#">Closing documents</a></li>
+             
+                    </ul>
+                </div>
+            </div>
+
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-6">
-                        <div class="comapny_box">            
-                            <h2 class="sec_color text-center mb-4">Complete your company profile</h2>
-                            <div class="steps">
-                                <div class="step active">
-                                    <span>1</span>
-                                    <p>  Your Information</p> 
-                                </div>
-                                <div class="space active"></div>
-                                <div class="step active">
-                                    <span>2</span>
-                                    <p>Provider Companies</p> 
-                                </div>
+                <!-- filter Buttons -->
+                <div class="filter_buttons">
+                    <a href="#">Type</a>
+                    <a href="#">ID</a>
+                    <a href="#">Guest's/Passenger's/Driver's</a>
+                    <a href="#">Hotel</a>
+                    <a href="#">City</a>
+                    <a href="#">Check-in/Pick-up/Plane or train departure date</a>
+                    <a href="#">Check-out/Drop-off/Plane or train arrival date</a>
+                    <a href="#">Status</a>
+                    <a href="#">Payment due</a>
+                    <a href="#">Group of clients</a>
+                   
+                    <a class="clear" href="#">Clear filters</a>
+                </div>
+                <!-- order cards  -->
+                <!-- card one -->
+                <div class="order_card">
+                    <div class="action_bar">
+                     <input type="checkbox">
+                    </div>
+                    <div class="content_box">
+                        <div class="row">
+                            <div class="col-sm-2 col-6">
+                                <h6>Type</h6>
+                                <h5 class="fw-bold">Hotel</h5>
                             </div>
-
-                            <form action="">
-                                    <h5 class="text-black mb-2">Select provider companys</h5>
-                               <div class="provider_box">
-                                <div class="heading">
-                                    <img src="./images/provider/1.png" alt="">
-                                    <div class="chooce">
-                                        <input type="checkbox" name="Rate howk" id="Rate howk">
-                                        <label for="Rate howk">Rate howk</label>
-                                    </div>
-
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <div class="inputGroup mb-0">
-                                            <label class="requierd" for="Api Key">Api Key </label>
-                                            <input name="Api Key" type="text" placeholder="Api Key">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="inputGroup mb-0">
-                                            <label class="requierd" for="Add Wallet Balance">Add Wallet Balance </label>
-                                            <input name="Add Wallet Balance" type="text" placeholder="Add Wallet Balance">
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                               </div>
-                               <div class="provider_box">
-                                <div class="heading">
-                                    <img src="./images/provider/2.png" alt="">
-                                    <div class="chooce">
-                                        <input type="checkbox" name="Rate howk" id="Rate howk">
-                                        <label for="Rate howk">Hotel & beds</label>
-                                    </div>
-
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <div class="inputGroup mb-0">
-                                            <label class="requierd" for="Api Key">Api Key </label>
-                                            <input name="Api Key" type="text" placeholder="Api Key">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="inputGroup mb-0">
-                                            <label class="requierd" for="Add Wallet Balance">Add Wallet Balance </label>
-                                            <input name="Add Wallet Balance" type="text" placeholder="Add Wallet Balance">
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                               </div>
-                               <div class="provider_box">
-                                <div class="heading">
-                                    <img src="./images/provider/3.png" alt="">
-                                    <div class="chooce">
-                                        <input type="checkbox" name="Rate howk" id="Rate howk">
-                                        <label for="Rate howk">Rate howk</label>
-                                    </div>
-
-                                </div>
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <div class="inputGroup mb-0">
-                                            <label class="requierd" for="Api Key">Api Key </label>
-                                            <input name="Api Key" type="text" placeholder="Api Key">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="inputGroup mb-0">
-                                            <label class="requierd" for="Add Wallet Balance">Add Wallet Balance </label>
-                                            <input name="Add Wallet Balance" type="text" placeholder="Add Wallet Balance">
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                               </div>
-                               <div class="row">
-         
-                             
-                                <div class="col-sm-7">
-                                    <button  type="submit" class="primaryBtn mt-20 w-100 mb-10">Submit</button>
-
-                                </div>
-                                <div class="col-sm-5">
-                                    <a href="com_complete_profile_two.html" class="greyBtn mt-20 w-100 mb-10">Back </a>
-
-                                </div>
-                               </div>
-
-                            </form>
+                            <div class="col-sm-2 col-6">
+                                <h6> ID</h6>
+                                <h5>18255044</h5>
+                            </div>
+                            <div class="col-sm-2 col-6">
+                                <h6>Status </h6>
+                                <h5><span class="badge bg-success">Completed</span></h5>
+                            </div>
+                            <div class="col-sm-2 col-12">
+                                <h6>Created on </h6>
+                                <h5>May 2, 2023, 10:46</h5>
+                            </div>
+                            <div class="col-sm-2 col-6">
+                                <h6>Payment due </h6>
+                                <h5>Jul 24, 2023</h5>
+                            </div>
+                            <div class="col-sm-2 col-6">
+                                <h6>reservation type </h6>
+                                <h5>Agent - <a href="#"> Ahmed hassan</a></h5>
+                            </div>
                         </div>
+
+                        <div class="row">
+                            <div class="col-sm-2 col-6">
+                                <h6>Price w/o add. services</h6>
+                                <h5>$331</h5>
+                            </div>
+                            <div class="col-sm-2 col-6">
+                                <h6> Paid</h6>
+                                <h5>No</h5>
+                            </div>
+                            <div class="col-sm-2 col-12">
+                                <h6> Guest</h6>
+                                <h5>Test Test </h5>
+                            </div>
+                            <div class="col-sm-2 col-6">
+                                <h6>Check-in </h6>
+                                <h5>Jul 11, 2023</h5>
+                            </div>
+                            <div class="col-sm-2 col-6">
+                                <h6> Check-out at</h6>
+                                <h5>Jul 14, 2023</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2 col-6">
+                                <h6>Country/Route</h6>
+                                <h5 class="mb-0">Egypt</h5>
+                            </div>
+                            <div class="col-sm-2 col-6">
+                                <h6>City</h6>
+                                <h5 class="mb-0">Cairo</h5>
+                            </div>
+                            <div class="col-sm-2 col-6">
+                                <h6>Hotel</h6>
+                                <h5 class="mb-0">Novotel Cairo Airport</h5>
+                            </div>
+                            <div class="col-sm-2 col-6">
+                                <h6>Group of clients</h6>
+                                <h5 class="mb-0">-</h5>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-            
-          
-        </section>
+              
 
+                <!-- ================================================ -->
+                <!-- card two -->
+                <div class="order_card">
+                    <div class="action_bar">
+                     <input type="checkbox">
+                    </div>
+                    <div class="content_box">
+                        <div class="row">
+                            <div class="col-sm-2 col-6">
+                                <h6>Type</h6>
+                                <h5 class="fw-bold">Hotel</h5>
+                            </div>
+                            <div class="col-sm-2 col-6">
+                                <h6> ID</h6>
+                                <h5>18255044</h5>
+                            </div>
+                            <div class="col-sm-2 col-6">
+                                <h6>Status </h6>
+                                <h5><span class="badge bg-success">Completed</span></h5>
+                            </div>
+                            <div class="col-sm-2 col-12">
+                                <h6>Created on </h6>
+                                <h5>May 2, 2023, 10:46</h5>
+                            </div>
+                            <div class="col-sm-2 col-6">
+                                <h6>Payment due </h6>
+                                <h5>Jul 24, 2023</h5>
+                            </div>
+                            <div class="col-sm-2 col-6">
+                                <h6>reservation type </h6>
+                                <h5>Agent - <a href="#"> Ahmed hassan</a></h5>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-2 col-6">
+                                <h6>Price w/o add. services</h6>
+                                <h5>$331</h5>
+                            </div>
+                            <div class="col-sm-2 col-6">
+                                <h6> Paid</h6>
+                                <h5>No</h5>
+                            </div>
+                            <div class="col-sm-2 col-12">
+                                <h6> Guest</h6>
+                                <h5>Test Test </h5>
+                            </div>
+                            <div class="col-sm-2 col-6">
+                                <h6>Check-in </h6>
+                                <h5>Jul 11, 2023</h5>
+                            </div>
+                            <div class="col-sm-2 col-6">
+                                <h6> Check-out at</h6>
+                                <h5>Jul 14, 2023</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-2 col-6">
+                                <h6>Country/Route</h6>
+                                <h5 class="mb-0">Egypt</h5>
+                            </div>
+                            <div class="col-sm-2 col-6">
+                                <h6>City</h6>
+                                <h5 class="mb-0">Cairo</h5>
+                            </div>
+                            <div class="col-sm-2 col-6">
+                                <h6>Hotel</h6>
+                                <h5 class="mb-0">Novotel Cairo Airport</h5>
+                            </div>
+                            <div class="col-sm-2 col-6">
+                                <h6>Group of clients</h6>
+                                <h5 class="mb-0">-</h5>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+             
+            </div>
+        </section>
 
         <!-- start footer -->
         <footer>
             <div class="container">
-
                 <div class="row">
                     <div class="col-sm-4">
-                        <a href="index.html"> <img src="./images/logo.png" height="50" alt="footer_logo"
-                                class="logo mb-30"></a>
+                        <a href="index.html">
+                            <img src="./images/logo.png" height="50" alt="footer_logo" class="logo mb-30" /></a>
                         <ul class="list-unstyled list-inline d-flex gap-3">
-                            <li class="list-inline-item"><a href="#"><img height="25"
-                                        src="./images/social/instagram.png" alt="instagram"></a></li>
-                            <li class="list-inline-item"><a href="#"><img height="25" src="./images/social/facebook.png"
-                                        alt="facebook"></a></li>
-                            <li class="list-inline-item"><a href="#"><img height="25" src="./images/social/twitter.png"
-                                        alt="twitter"></a></li>
+                            <li class="list-inline-item">
+                                <a href="#"><img height="25" src="./images/social/instagram.png" alt="instagram" /></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><img height="25" src="./images/social/facebook.png" alt="facebook" /></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><img height="25" src="./images/social/twitter.png" alt="twitter" /></a>
+                            </li>
                         </ul>
                     </div>
                     <div class="col-sm-2">
@@ -308,26 +384,25 @@
             </div>
         </footer>
         <!-- end footer -->
-
     </main>
 
-    <!--  Bootstrap-->
-    <script src="./js/popper.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-
-    <!--    wow.js file-->
-    <script src="./js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
-    <!-- jquery -->
-    <script src="./js/jquery-1.12.3.min.js"></script>
-    <!-- fontawesome -->
-    <script src="./js/fontawesome-all.min.js"></script>
-    <!-- lightbox -->
-    <script src="./js/lightbox.min.js"></script>
-    <!--    My JS Code   -->
-    <script src="./js/main.js"></script>
-</body>
+   <!--  Bootstrap-->
+   <script src="./js/popper.min.js"></script>
+   <script src="./js/bootstrap.min.js"></script>
+ 
+   <!--    wow.js file-->
+   <script src="./js/wow.min.js"></script>
+   <script>
+     new WOW().init();
+   </script>
+   <!-- jquery -->
+   <script src="./js/jquery-1.12.3.min.js"></script>
+   <!-- fontawesome -->
+   <script src="./js/fontawesome-all.min.js"></script>
+   <!-- lightbox -->
+   <script src="./js/lightbox.min.js"></script>
+   <!--    My JS Code   -->
+   <script src="./js/main.js"></script>
+ </body>
 
 </html>

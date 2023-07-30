@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- title -->
+    <title>Ravito</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <meta name="description" content="Ravito">
+    <!--    first mobile meta-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--    internet explorer compatibility meta-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--    fontawesome-->
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <!-- google fonts * cairo * -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- RTL Bootstrap  -->
+    <!-- <link rel="stylesheet" href="./css/bootstrap.rtl.min.css"> -->
+  
+  
+   <!-- Style file -->
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+<body>
+    <main>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img class="logo" src="./images/logo.png" alt="logo"></a>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Search</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Orders</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Reporting</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Clients</a>
+                            </li>
+
+                        </ul>
+
+                        <ul class="navbar-nav right-side ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown haveBorder">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="./images/navbar/currency.png" height="20" alt="dollar" class="me-1"> USD
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">SAR </a></li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown haveBorder">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="./images/navbar/lang.png" height="15" alt="us-flag" class="me-1"> EN
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">AR </a></li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown haveBorder">
+                                <div class="dropdown spec_profile_dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="./images/navbar/user.png" height="20" alt="user" class="me-1">
+                                        Company Name
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <h5>Compamy Name</h5>
+                                        <h6>Compamy Name Agency</h6>
+                                        <p class="m-0 text-warning"><i
+                                                class="fa-solid fa-triangle-exclamation text-warning me-2"></i> Please
+                                            complete your company profile</p>
+                                        <div>
+                                            <a href="#" class="fw-bold">Company Profile</a>
+                                            <a href="#" class="fw-bold">Logout</a>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <div class="dropdown spec_menu_dropdown">
+                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="./images/navbar/menu.png" height="25" alt="menu" class="">
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <h6>Search</h6>
+                                        <li><a class="dropdown-item" href="#"><img src="./images/icons/hotel_black.png"
+                                                    width="20" class="me-3" alt="Hotels">Hotels</a></li>
+                                        <li><a class="dropdown-item" href="#"><img src="./images/icons/plane.png"
+                                                    width="20" class="me-3" alt="Air tickets">Air tickets</a></li>
+                                        <li><a class="dropdown-item" href="#"><img src="./images/icons/bus.png"
+                                                    width="20" class="me-3" alt="Transfers">Transfers</a></li>
+                                        <li><a class="dropdown-item" href="#"><img src="./images/icons/car_black.png"
+                                                    width="20" class="me-3" alt="Car rental">Car rental</a></li>
+                                        <li><a class="dropdown-item" href="#"><img src="./images/icons/shield.png"
+                                                    width="20" class="me-3" alt="Visa">Visa</a></li>
+                                        <h6>Orders</h6>
+                                        <li><a class="dropdown-item" href="#">Hotels</a></li>
+                                        <li><a class="dropdown-item" href="#">Air tickets</a></li>
+                                        <li><a class="dropdown-item" href="#">Transfers</a></li>
+                                        <li><a class="dropdown-item" href="#">Car rental</a></li>
+                                        <li><a class="dropdown-item" href="#">Visa</a></li>
+                                        <li><a class="dropdown-item" href="#">Reporting</a></li>
+                                        <li><a class="dropdown-item" href="#">Clients</a></li>
+
+                                    </ul>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+
+        <section class="content profile orders">
+     
+
+            <div class="container profile_content">
+                <div class="top">
+
+                    <h3 class="fw-bold mb-3">wallet details</h3>
+                               <!-- card one -->
+                <div class="order_card mb-3" style="border-color: #B8E4FE;">
+                    <div class="action_bar align-items-center justify-content-center" style="background: #B8E4FE;">
+                
+                    </div>
+                    <div class="content_box">
+                        <div class="row">
+                            <div class="col-sm-2 col-6">
+                                <h6>User name</h6>
+                                <h5 class="fw-bold">Ahmed Mohammed</h5>
+                            </div>
+                            <div class="col-sm-2 col-6">
+                                <h6> Member's ID</h6>
+                                <h5>2262532323232</h5>
+                            </div>
+                            <div class="col-sm-2 col-6">
+                                <h6>Phone number </h6>
+                                <h5>0123456789</h5>
+                            </div>
+                            <div class="col-sm-2 col-12">
+                                <h6>Email </h6>
+                                <h5>email@email.com</h5>
+                            </div>
+                            <div class="col-sm-2 col-6">
+                                <h6>Wallet balance </h6>
+                                <h5>$ 1000  <a class="ms-4" href="user_wallet_details.html">Details</a></h5>
+                            </div>
+                            <div class="col-sm-2 col-6">
+                                <h6>User booking </h6>
+                                <h5>20 <a class="ms-4" href="#">Details</a></h5>
+                            </div>
+                        </div>
+
+                     
+
+                    </div>
+                </div>
+
+                     <!-- card one -->
+                     <div class="order_card">
+                        <div class="action_bar">
+                            <a data-bs-toggle="modal" data-bs-target="#cardOne" class="text-center"> <i
+                                    class="fa-solid fa-up-right-and-down-left-from-center main_color"></i></a>
+                            <div class="btn-group dropup">
+                                <button type="button" class="btn dropdown-toggle p-0" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <!-- Dropdown menu links -->
+                                    <li><a class="dropdown-item" href="#">Invoice</a></li>
+                                    <li><a class="dropdown-item disabled">Informational invoice</a></li>
+                                    <li><a class="dropdown-item" href="#">Voucher</a></li>
+                                    <li><a class="dropdown-item" href="#">Copy the passive segment (PNR)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="content_box">
+                            <div class="row">
+                                <div class="col-sm-2 col-6">
+                                    <h6>Order number</h6>
+                                    <h5 class="fw-bold">382650460</h5>
+                                </div>
+                                <div class="col-sm-2 col-6">
+                                    <h6> Supplier</h6>
+                                    <h5>18255044</h5>
+                                </div>
+                                <div class="col-sm-2 col-6">
+                                    <h6>Status </h6>
+                                    <h5><span class="badge bg-primary">In progress</span></h5>
+                                </div>
+                                <div class="col-sm-2 col-12">
+                                    <h6>Price w/o add. services </h6>
+                                    <h5>$ 331</h5>
+                                </div>
+                                <div class="col-sm-2 col-6">
+                                    <h6>Guest </h6>
+                                    <h5>Test Test</h5>
+                                </div>
+                                <div class="col-sm-2 col-6">
+                                    <h6>Paid on </h6>
+                                    <h5>-</h5>
+                                </div>
+                            </div>
+    
+                            <div class="row">
+                                <div class="col-sm-2 col-6">
+                                    <h6>Check-in</h6>
+                                    <h5>Jul 11, 2023</h5>
+                                </div>
+                                <div class="col-sm-2 col-6">
+                                    <h6> Check-out at</h6>
+                                    <h5>Jul 14, 2023</h5>
+                                </div>
+                                <div class="col-sm-2 col-12">
+                                    <h6> Hotel</h6>
+                                    <h5 class="main_color"><a href="#"> Novotel Cairo Airport </a></h5>
+                                </div>
+                                <div class="col-sm-2 col-6">
+                                    <h6>Country/Route </h6>
+                                    <h5>Egypt</h5>
+                                </div>
+                                <div class="col-sm-2 col-6">
+                                    <h6> City</h6>
+                                    <h5>Cairo</h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <h6>Free cancellation</h6>
+                                    <h5 class="mb-0">Jul 11, 2023, 02:00</h5>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <!-- Modal for card one -->
+                    <div class="modal fade" id="cardOne" tabindex="-1" aria-labelledby="cardOneLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="order_card">
+                                        <div class="action_bar">
+                                            <div class="btn-group dropup">
+                                                <button type="button" class="btn dropdown-toggle p-0"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <!-- Dropdown menu links -->
+                                                    <li><a class="dropdown-item" href="#">Invoice</a></li>
+                                                    <li><a class="dropdown-item disabled">Informational invoice</a></li>
+                                                    <li><a class="dropdown-item" href="#">Voucher</a></li>
+                                                    <li><a class="dropdown-item" href="#">Copy the passive segment (PNR)</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="content_box">
+                                            <div class="row">
+                                                <div class="col-sm-2 col-6">
+                                                    <h6>Order number</h6>
+                                                    <h5 class="fw-bold">382650460</h5>
+                                                </div>
+                                                <div class="col-sm-2 col-6">
+                                                    <h6> Supplier</h6>
+                                                    <h5>18255044</h5>
+                                                </div>
+                                                <div class="col-sm-2 col-6">
+                                                    <h6>Status </h6>
+                                                    <h5><span class="badge bg-primary">in progress</span></h5>
+                                                </div>
+                                                <div class="col-sm-2 col-6">
+                                                    <h6>Canceled </h6>
+                                                    <h5>--</h5>
+                                                </div>
+                                                <div class="col-sm-2 col-6">
+                                                    <h6>Refund amount </h6>
+                                                    <h5>--</h5>
+                                                </div>
+                                                <div class="col-sm-2 col-12">
+                                                    <h6>User's e-mail </h6>
+                                                    <h5>yaroushdy@intratour-eg.com</h5>
+                                                </div>
+                                            </div>
+    
+                                            <div class="row">
+                                                <div class="col-sm-2 col-6">
+                                                    <h6>Contract Number</h6>
+                                                    <h5>B2B-16153</h5>
+                                                </div>
+                                                <div class="col-sm-2 col-6">
+                                                    <h6> Invoice ID</h6>
+                                                    <h5>--</h5>
+                                                </div>
+                                                <div class="col-sm-2 col-6">
+                                                    <h6> Created on</h6>
+                                                    <h5>May 3, 2023, 18:07</h5>
+                                                </div>
+                                                <div class="col-sm-2 col-6">
+                                                    <h6>Payment pending </h6>
+                                                    <h5>May 16, 2023</h5>
+                                                </div>
+                                                <div class="col-sm-2 col-6">
+                                                    <h6> Payment due</h6>
+                                                    <h5>May 23, 2023</h5>
+                                                </div>
+                                            </div>
+    
+                                            <div class="row">
+                                                <div class="col-sm-2 col-6">
+                                                    <h6>Paid on</h6>
+                                                    <h5>May 3, 2023</h5>
+                                                </div>
+                                                <div class="col-sm-2 col-6">
+                                                    <h6>Paid</h6>
+                                                    <h5>Yes</h5>
+                                                </div>
+                                                <div class="col-sm-2 col-6">
+                                                    <h6>Overdue</h6>
+                                                    <h5>No</h5>
+                                                </div>
+                                                <div class="col-sm-2 col-6">
+                                                    <h6>Payment type</h6>
+                                                    <h5>By card</h5>
+                                                </div>
+                                            </div>
+    
+                                            <div class="row">
+                                                <div class="col-sm-4 col-6">
+                                                    <h6>NET price, no additional services included</h6>
+                                                    <h5>$ 206.32</h5>
+                                                </div>
+                                                <div class="col-sm-4 col-6">
+                                                    <h6>Client price, no additional services included</h6>
+                                                    <h5>$ 206.32 <button class="p-0 btn ms-1"><i
+                                                                class="fa-solid fa-pen"></i></button></h5>
+                                                </div>
+                                                <div class="col-sm-4 col-6">
+                                                    <h6>Client price, total</h6>
+                                                    <h5>$ 206.32</h5>
+                                                </div>
+                                            </div>
+    
+                                            <div class="row">
+                                                <div class="col-sm-2 col-6">
+                                                    <h6>Promo code</h6>
+                                                    <h5>EGP 0</h5>
+                                                </div>
+                                                <div class="col-sm-2 col-6">
+                                                    <h6>Price w/o add. services</h6>
+                                                    <h5>EGP 6,370</h5>
+                                                </div>
+                                                <div class="col-sm-2 col-6">
+                                                    <h6>Total price</h6>
+                                                    <h5>$ 206.32</h5>
+                                                </div>
+                                                <div class="col-sm-2 col-6">
+                                                    <h6>To be paid, total</h6>
+                                                    <h5>EGP 0</h5>
+                                                </div>
+                                                <div class="col-sm-2 col-6">
+                                                    <h6>Initial NET price</h6>
+                                                    <h5>EGP 6,370</h5>
+                                                </div>
+                                                <div class="col-sm-2 col-6">
+                                                    <h6>Group of clients</h6>
+                                                    <h5>--</h5>
+                                                </div>
+                                            </div>
+    
+                                            <div class="row">
+                                                <div class="col-sm-2 col-6">
+                                                    <h6>VAT</h6>
+                                                    <h5>EGP 0</h5>
+                                                </div>
+                                                <div class="col-sm-4 col-6">
+                                                    <h6>VAT including add. services</h6>
+                                                    <h5>EGP 0</h5>
+                                                </div>
+                                            </div>
+    
+                                            <hr>
+    
+                                            <div class="row">
+                                                <div class="col-sm-2 col-6">
+                                                    <h6>Check-in</h6>
+                                                    <h5>Jul 11, 2023</h5>
+                                                </div>
+                                                <div class="col-sm-2 col-6">
+                                                    <h6>Check-out at</h6>
+                                                    <h5>Jul 14, 2023</h5>
+                                                </div>
+                                                <div class="col-sm-2 col-6">
+                                                    <h6>Free cancellation</h6>
+                                                    <h5>No</h5>
+                                                </div>
+                                                <div class="col-sm-2 col-6">
+                                                    <h6>Nights</h6>
+                                                    <h5>2</h5>
+                                                </div>
+                                                <div class="col-sm-2 col-6">
+                                                    <h6>Room-nights</h6>
+                                                    <h5>2</h5>
+                                                </div>
+                                                <div class="col-sm-2 col-6">
+                                                    <h6>Average daily rate</h6>
+                                                    <h5>EGP 3,185</h5>
+                                                </div>
+                                            </div>
+    
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h6>Cancellation without penalty</h6>
+                                                    <h5>No</h5>
+                                                </div>
+                                            </div>
+    
+                                            <hr>
+    
+                                            <div class="row">
+                                                <div class="col-sm-2 col-6">
+                                                    <h6>Country/Route</h6>
+                                                    <h5>Egypt</h5>
+                                                </div>
+                                                <div class="col-sm-2 col-6">
+                                                    <h6>Country/Route</h6>
+                                                    <h5>Cairo</h5>
+                                                </div>
+                                                <div class="col-sm-4 col-6">
+                                                    <h6>Hotel</h6>
+                                                    <h5><a href="#"> Sonesta Hotel, Tower & Casino - Cairo </a></h5>
+                                                </div>
+                                                <div class="col-sm-4 col-6">
+                                                    <h6>Room type</h6>
+                                                    <h5>Superior Double room (full double bed)</h5>
+                                                </div>
+                                            </div>
+    
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <h6>Original rate name from the supplier</h6>
+                                                    <h5>Superior Room with Double or Twin Bed</h5>
+                                                </div>
+                                            </div>
+    
+                                            <div class="row">
+                                                <div class="col-sm-2 col-6">
+                                                    <h6>Hotel order ID</h6>
+                                                    <h5>--</h5>
+                                                </div>
+                                                <div class="col-sm-2 col-6">
+                                                    <h6>Guest</h6>
+                                                    <h5>--</h5>
+                                                </div>
+                                                <div class="col-sm-2 col-6">
+                                                    <h6>Number of adults</h6>
+                                                    <h5>--</h5>
+                                                </div>
+                                                <div class="col-sm-2 col-6">
+                                                    <h6>Number of children</h6>
+                                                    <h5>--</h5>
+                                                </div>
+                                            </div>
+    
+                                            <hr>
+    
+                                            <div class="row">
+                                                <div class="col-sm-2 col-6">
+                                                    <h6>Bonus points</h6>
+                                                    <h5>Not available</h5>
+                                                </div>
+                                                <div class="col-sm-2 col-6">
+                                                    <h6>Meal</h6>
+                                                    <h5>Breakfast</h5>
+                                                </div>
+                                                <div class="col-sm-2 col-6">
+                                                    <h6>Supplier ID</h6>
+                                                    <h5>501574125</h5>
+                                                </div>
+                                                <div class="col-sm-2 col-6">
+                                                    <h6>Order source</h6>
+                                                    <h5>Website</h5>
+                                                </div>
+                                            </div>
+    
+                                            <hr>
+    
+                                            <div class="row bottom_actions">
+                                                <div class="col-sm-3"><button class="btn p-0 main_color"><i
+                                                            class="fa-solid fa-copy me-2"></i> Copy the passive segment
+                                                        (PNR)</button></div>
+                                                <div class="col-sm-2">
+                                                    <div class="btn-group dropup">
+    
+                                                        <button type="button" class="btn p-0 main_color"
+                                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fa-solid fa-ticket me-2"></i> Voucher
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                            <!-- Dropdown menu links -->
+                                                            <li><a class="dropdown-item" href="#">Download the voucher</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item disabled">Download the voucher for
+                                                                    the visa</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-2"><button class="btn p-0 main_color"><i
+                                                            class="fa-solid fa-credit-card me-2"></i> Pay by card</button>
+                                                </div>
+                                                <div class="col-sm-3"><button class="btn p-0 main_color"><i
+                                                            class="fa-solid fa-link me-2"></i> Payment link for a
+                                                        client</button></div>
+                                                <div class="col-sm-2"><button class="btn p-0 red_color"><i
+                                                            class="fa-solid fa-circle-xmark me-2"></i> Cancel</button></div>
+                                            </div>
+    
+    
+                                            <!-- cancel-box  show when click on cancel btn-->
+                                            <div class="row">
+                                                <div class="cancel_box">
+                                                    <div class="row">
+                                                        <div class="col-sm-4">
+                                                            <h4 class="fw-bold red_color">Cancel order #382650460</h4>
+                                                            <div class="list">
+                                                                <h6>Time Zone</h6>
+                                                                <h5>Your - Africa/Cairo (GMT +02:00)</h5>
+                                                            </div>
+                                                            <p class="text-black-50">Free cancellation until July 11, 2023
+                                                                02:00*. The order is non-refundable if canceled after July
+                                                                11, 2023 02:00*. *your local time (UTC +02:00)</p>
+                                                            <select name="" id="" class=" w-100">
+                                                                <option hidden>The Trip Was Canceled</option>
+                                                                <option value=""></option>
+                                                                <option value=""></option>
+                                                                <option value=""></option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-12">
+    
+                                                            <div class="row">
+                                                                <div class="col-sm-3">
+                                                                    <button class="redBtn w-100 my-2">Cancel with full
+                                                                        refund</button>
+                                                                </div>
+                                                                <div class="col-sm-3">
+                                                                    <button class="outlineBtn w-100 my-2">Don't cancel the
+                                                                        order</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            
+
+                </div>
+               
+
+
+            </div>
+
+
+        </section>
+
+        <!-- start footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <a href="index.html">
+                            <img src="./images/logo.png" height="50" alt="footer_logo" class="logo mb-30" /></a>
+                        <ul class="list-unstyled list-inline d-flex gap-3">
+                            <li class="list-inline-item">
+                                <a href="#"><img height="25" src="./images/social/instagram.png" alt="instagram" /></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><img height="25" src="./images/social/facebook.png" alt="facebook" /></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#"><img height="25" src="./images/social/twitter.png" alt="twitter" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2">
+                        <ul class="list-unstyled links">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2">
+                        <ul class="list-unstyled links">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2">
+                        <ul class="list-unstyled links">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2">
+                        <ul class="list-unstyled links">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+    </main>
+
+  <!--  Bootstrap-->
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+
+    <!-- jquery -->
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <!--    wow.js file-->
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js"></script>
+    <script>
+        new Chart(document.getElementById("pie-chart"), {
+            type: 'pie',
+            data: {
+                labels: ["Withdraw", "deposit", "Refund"],
+                datasets: [{
+                    backgroundColor: ["#8305F2", "#01AEFB", "#FB5774", ],
+                    data: [1000, 500, 100]
+                }]
+            },
+            options: {
+
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: 'right'
+                    },
+                    datalabels: { // This code is used to display data values
+                        anchor: 'end',
+                        align: 'top',
+                        formatter: Math.round,
+                        font: {
+                            weight: 'bold',
+                            size: 16
+                        }
+                    }
+                },
+                title: {
+                    display: true,
+                    text: 'Chart JS Pie Chart Example'
+                },
+            }
+        });
+    </script>
+    <!-- fontawesome -->
+    <script src="./js/fontawesome-all.min.js"></script>
+    <!-- lightbox -->
+    <script src="./js/lightbox.min.js"></script>
+    <!--    My JS Code   -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

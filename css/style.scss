@@ -226,8 +226,8 @@ label.requierd {
 
 .greyBtn {
   @extend %defaultButton;
-  border: 2px solid #E1E1E1;
-  background: #E1E1E1;
+  border: 2px solid #e1e1e1;
+  background: #e1e1e1;
   color: #555;
 
   &:hover {
@@ -270,7 +270,7 @@ nav.breadcrumb {
     margin-bottom: 0;
   }
 
-  .breadcrumb-item+.breadcrumb-item::before {
+  .breadcrumb-item + .breadcrumb-item::before {
     content: var(--bs-breadcrumb-divider, ">");
   }
 }
@@ -368,7 +368,7 @@ header {
       outline: none;
     }
 
-    .btn-check:focus+.btn,
+    .btn-check:focus + .btn,
     .btn:focus {
       box-shadow: unset;
     }
@@ -612,7 +612,7 @@ footer {
           }
         }
 
-        input.active+.all {
+        input.active + .all {
           background: $secColor;
           color: #fff;
         }
@@ -1648,7 +1648,7 @@ footer {
   padding-top: 3rem;
   padding-bottom: 3rem;
   .inputGroup {
-    margin-bottom: .5rem !important;
+    margin-bottom: 0.5rem !important;
   }
 
   .sign_box {
@@ -1681,12 +1681,12 @@ footer {
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    padding: .5rem;
-    background: #F8F8F8;
+    padding: 0.5rem;
+    background: #f8f8f8;
     margin-bottom: 2rem;
 
     .space {
-      background: #D5D5D5;
+      background: #d5d5d5;
       height: 2px;
       width: 40%;
 
@@ -1699,7 +1699,7 @@ footer {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: .5rem;
+      gap: 0.5rem;
 
       p {
         margin: 0;
@@ -1721,15 +1721,24 @@ footer {
         background: $mainColor;
       }
     }
-
   }
 
   .provider_box {
     padding: 1rem;
     border-radius: 1rem;
-    background: #F8F8F8;
+    background: #f8f8f8;
     margin-bottom: 1rem;
     margin-top: 1rem;
+    .inputGroup {
+      position: relative;
+      .fa-trash {
+        position: absolute;
+        right: 0.5rem;
+        top: 1.3rem;
+        color: #e84a4a;
+        cursor: pointer;
+      }
+    }
 
     .heading {
       display: flex;
@@ -1740,13 +1749,13 @@ footer {
         height: 60px;
         width: 70px;
         object-fit: contain;
-        border-radius: .5rem;
+        border-radius: 0.5rem;
         border: 1px solid #ccc;
       }
 
       .chooce {
         display: flex;
-        gap: .4rem;
+        gap: 0.4rem;
         align-items: center;
 
         input[type="checkbox"] {
@@ -1754,12 +1763,11 @@ footer {
           height: 20px;
         }
       }
-
     }
   }
 
   .company_tab {
-    background: #F8F8F8;
+    background: #f8f8f8;
 
     li {
       padding: 0.8rem 0.2rem;
@@ -1778,17 +1786,16 @@ footer {
       color: #4e4e4e;
       font-size: 1rem;
       font-weight: 600;
-
     }
   }
   .info-box {
     padding: 1rem;
     border-radius: 1rem;
-    background: #F8F8F8;
+    background: #f8f8f8;
     margin-bottom: 1rem;
     margin-top: 1rem;
     .inputGroup {
-      margin-bottom: .5rem !important;
+      margin-bottom: 0.5rem !important;
     }
     input[type="file"] {
       background: transparent;
@@ -1800,6 +1807,25 @@ footer {
       color: #bbb;
       cursor: pointer;
     }
+  }
+}
+.search_icon {
+  position: absolute;
+  right: .5rem;
+  top: 1.2rem;
+  color: $mainColor;
+  font-size: 1.4rem;
+}
+.add_new_agent_box {
+  background: #F8F8F8;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: .5rem;
+  padding: 2rem 1rem;
+  .fa-user {
+    color: #B5B5B5;
+    font-size: 3rem;
+    margin-bottom: .5rem;
   }
 }
 
@@ -1910,19 +1936,24 @@ footer {
 }
 
 /* galaxy S5 */
-@media only screen and (min-width: 359px) and (max-width: 361px) {}
+@media only screen and (min-width: 359px) and (max-width: 361px) {
+}
 
 /* iphone x, 6/7/8 */
-@media only screen and (min-width: 375px) and (max-width: 380px) {}
+@media only screen and (min-width: 375px) and (max-width: 380px) {
+}
 
 /* iphone 6/7/8 plus */
-@media only screen and (min-width: 410px) and (max-width: 416px) {}
+@media only screen and (min-width: 410px) and (max-width: 416px) {
+}
 
 /* ipad */
-@media only screen and (min-width: 768px) and (max-width: 992px) {}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+}
 
 /* ipad pro  */
-@media only screen and (min-width: 1024px) and (max-width: 1030px) {}
+@media only screen and (min-width: 1024px) and (max-width: 1030px) {
+}
 
 /* 17 inch */
 @media only screen and (min-width: 1920px) and (max-width: 2500px) {

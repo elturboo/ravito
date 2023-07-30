@@ -135,32 +135,37 @@ $(document).on("click", ".addChild", function () {
 });
 
 // toggle class active to checkbox on click
-let checkboxes = ["#noStar", "#oneStar", "#threeStar", "#fourStar", "#fiveStar","#ro", "#bb", "#hb", "#fb", "#ai"];
-checkboxes.forEach(function (checkbox, ) {
+let checkboxes = [
+  "#noStar",
+  "#oneStar",
+  "#threeStar",
+  "#fourStar",
+  "#fiveStar",
+  "#ro",
+  "#bb",
+  "#hb",
+  "#fb",
+  "#ai",
+];
+checkboxes.forEach(function (checkbox) {
   $(checkbox).on("click", function () {
-   $(this).toggleClass("active");
-  })
+    $(this).toggleClass("active");
   });
-
-
+});
 
 // close room dropdown on done
-$("#closeRooms").click(function() {
+$("#closeRooms").click(function () {
   $(this).closest(".dropdown-menu").prev().dropdown("toggle");
 });
 
-var filterHeight = document.getElementById('myFilter'). offsetHeight;//includes margin,border,padding
+var filterHeight = document.getElementById("myFilter").offsetHeight; //includes margin,border,padding
 
-console.log(filterHeight)
+console.log(filterHeight);
 
 $(window).scroll(function () {
   if ($(this).scrollTop() > filterHeight) {
-      $(".navbar").css("background-color", "#1d6699");
-  
-
+    $(".navbar").css("background-color", "#1d6699");
   } else {
-      $(".navbar").css("background", "transparent");
-
-
+    $(".navbar").css("background", "transparent");
   }
 });
