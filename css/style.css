@@ -1476,16 +1476,114 @@ footer .links li a {
 }
 
 .add_new_agent_box {
-  background: #F8F8F8;
+  background: #f8f8f8;
   margin-top: 1rem;
   margin-bottom: 1rem;
   border-radius: 0.5rem;
   padding: 2rem 1rem;
 }
 .add_new_agent_box .fa-user {
-  color: #B5B5B5;
+  color: #b5b5b5;
   font-size: 3rem;
   margin-bottom: 0.5rem;
+}
+
+.tax_invoice {
+  padding: 2rem 0;
+}
+.tax_invoice img.logo {
+  width: 150px;
+  margin-bottom: 2rem;
+}
+.tax_invoice .right {
+  text-align: end;
+}
+.tax_invoice h3 {
+  font-size: 22px;
+}
+.tax_invoice p {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: #777;
+}
+.tax_invoice .tax_box {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background: #f6f6f6;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.tax_invoice .tax_box h3.heading {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+.tax_invoice .tax_box h4 {
+  font-size: 1.2rem;
+}
+.tax_invoice .tax_box .right {
+  text-align: end;
+}
+.tax_invoice .tax_box .right img.qr_code {
+  width: 110px;
+  margin-top: -1rem;
+}
+.tax_invoice .table > thead th {
+  font-size: 13px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+@media print {
+  div.no_break {
+    -moz-column-break-inside: avoid;
+         break-inside: avoid;
+  }
+}
+.booking_invoice {
+  padding: 2rem 0;
+}
+.booking_invoice img.logo {
+  width: 150px;
+  margin-bottom: 2rem;
+}
+.booking_invoice h3 {
+  font-size: 22px;
+}
+.booking_invoice p {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: #777;
+}
+.booking_invoice img.qr_code {
+  width: 120px;
+  height: 120px;
+}
+.booking_invoice .tax_box {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background: #f6f6f6;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.booking_invoice .tax_box h3.heading {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+.booking_invoice .tax_box h4 {
+  font-size: 1.2rem;
+}
+.booking_invoice .tax_box img.hotel_logo {
+  height: 252px;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+.booking_invoice .tax_box .checks {
+  padding: 1rem;
+  margin-top: 1rem;
+  background: #FFFFFF;
+}
+.booking_invoice .tax_box .checks .right {
+  border-inline-start: 1px solid #4aabe8;
 }
 
 /* Responsive */
@@ -1570,6 +1668,19 @@ footer .links li a {
   }
   .hotel_filter .hotel_card .price-box {
     border-radius: 0 0 1rem 1rem;
+  }
+  .tax_invoice .tax_box .big_row {
+    flex-direction: column-reverse;
+  }
+  .tax_invoice .top-row .right {
+    text-align: start;
+  }
+  .tax_invoice .tax_box .right {
+    text-align: center;
+  }
+  .tax_invoice .tax_box .right img {
+    margin-top: 5px !important;
+    margin-bottom: 20px;
   }
 }
 /* galaxy S5 */

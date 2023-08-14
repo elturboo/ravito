@@ -270,7 +270,7 @@ nav.breadcrumb {
     margin-bottom: 0;
   }
 
-  .breadcrumb-item + .breadcrumb-item::before {
+  .breadcrumb-item+.breadcrumb-item::before {
     content: var(--bs-breadcrumb-divider, ">");
   }
 }
@@ -368,7 +368,7 @@ header {
       outline: none;
     }
 
-    .btn-check:focus + .btn,
+    .btn-check:focus+.btn,
     .btn:focus {
       box-shadow: unset;
     }
@@ -612,7 +612,7 @@ footer {
           }
         }
 
-        input.active + .all {
+        input.active+.all {
           background: $secColor;
           color: #fff;
         }
@@ -1647,6 +1647,7 @@ footer {
   min-height: calc(100vh - 90px);
   padding-top: 3rem;
   padding-bottom: 3rem;
+
   .inputGroup {
     margin-bottom: 0.5rem !important;
   }
@@ -1729,8 +1730,10 @@ footer {
     background: #f8f8f8;
     margin-bottom: 1rem;
     margin-top: 1rem;
+
     .inputGroup {
       position: relative;
+
       .fa-trash {
         position: absolute;
         right: 0.5rem;
@@ -1788,15 +1791,18 @@ footer {
       font-weight: 600;
     }
   }
+
   .info-box {
     padding: 1rem;
     border-radius: 1rem;
     background: #f8f8f8;
     margin-bottom: 1rem;
     margin-top: 1rem;
+
     .inputGroup {
       margin-bottom: 0.5rem !important;
     }
+
     input[type="file"] {
       background: transparent;
       opacity: 0;
@@ -1809,23 +1815,142 @@ footer {
     }
   }
 }
+
 .search_icon {
   position: absolute;
-  right: .5rem;
+  right: 0.5rem;
   top: 1.2rem;
   color: $mainColor;
   font-size: 1.4rem;
 }
+
 .add_new_agent_box {
-  background: #F8F8F8;
+  background: #f8f8f8;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   padding: 2rem 1rem;
+
   .fa-user {
-    color: #B5B5B5;
+    color: #b5b5b5;
     font-size: 3rem;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.tax_invoice {
+  padding: 2rem 0;
+
+  img.logo {
+    width: 150px;
+    margin-bottom: 2rem;
+  }
+
+  .right {
+    text-align: end;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  p {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: #777;
+  }
+
+  .tax_box {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background: #f6f6f6;
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+    h3.heading {
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+    }
+
+    .right {
+      text-align: end;
+
+      img.qr_code {
+        width: 110px;
+        margin-top: -1rem;
+      }
+    }
+  }
+
+  .table>thead th {
+    font-size: 13px;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+}
+
+@media print {
+  div.no_break {
+    break-inside: avoid;
+  }
+}
+
+.booking_invoice {
+  padding: 2rem 0;
+
+  img.logo {
+    width: 150px;
+    margin-bottom: 2rem;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  p {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: #777;
+  }
+  img.qr_code {
+    width: 120px;
+    height: 120px;
+  }
+
+  .tax_box {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background: #f6f6f6;
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+    h3.heading {
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+    }
+
+    img.hotel_logo {
+      height: 252px;
+      width: 100%;
+      border: 1px solid #ccc;
+    }
+
+    .checks {
+      padding: 1rem;
+      margin-top: 1rem;
+      background: #FFFFFF;
+      .right {
+        border-inline-start: 1px solid $mainColor;
+      }
+    }
   }
 }
 
@@ -1933,27 +2058,41 @@ footer {
   .hotel_filter .hotel_card .price-box {
     border-radius: 0 0 1rem 1rem;
   }
+
+  .tax_invoice .tax_box .big_row {
+    flex-direction: column-reverse;
+  }
+
+  .tax_invoice .top-row {
+    .right {
+      text-align: start;
+    }
+  }
+
+  .tax_invoice .tax_box .right {
+    text-align: center;
+
+    img {
+      margin-top: 5px !important;
+      margin-bottom: 20px;
+    }
+  }
 }
 
 /* galaxy S5 */
-@media only screen and (min-width: 359px) and (max-width: 361px) {
-}
+@media only screen and (min-width: 359px) and (max-width: 361px) {}
 
 /* iphone x, 6/7/8 */
-@media only screen and (min-width: 375px) and (max-width: 380px) {
-}
+@media only screen and (min-width: 375px) and (max-width: 380px) {}
 
 /* iphone 6/7/8 plus */
-@media only screen and (min-width: 410px) and (max-width: 416px) {
-}
+@media only screen and (min-width: 410px) and (max-width: 416px) {}
 
 /* ipad */
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-}
+@media only screen and (min-width: 768px) and (max-width: 992px) {}
 
 /* ipad pro  */
-@media only screen and (min-width: 1024px) and (max-width: 1030px) {
-}
+@media only screen and (min-width: 1024px) and (max-width: 1030px) {}
 
 /* 17 inch */
 @media only screen and (min-width: 1920px) and (max-width: 2500px) {
