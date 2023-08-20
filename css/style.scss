@@ -380,6 +380,13 @@ header {
       min-width: 13rem;
     }
   }
+  .tab-nav-bar {
+    button {
+      background: transparent;
+      border: none;
+      outline: none;
+    }
+  }
 }
 
 // end header
@@ -2077,6 +2084,9 @@ footer {
       margin-bottom: 20px;
     }
   }
+  .servises-tab li:not(:last-child) {
+    margin-inline-end: 1rem;
+}
 }
 
 /* galaxy S5 */
