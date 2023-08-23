@@ -334,6 +334,13 @@ header .tab-nav-bar .active {
   color: #4aabe8 !important;
 }
 
+.map iframe {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+
 .hero img {
   height: 30rem;
   width: 100%;
