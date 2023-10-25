@@ -160,7 +160,6 @@ $("#closeRooms").click(function () {
 
 var filterHeight = document.getElementById("myFilter").offsetHeight; //includes margin,border,padding
 
-console.log(filterHeight);
 
 $(window).scroll(function () {
   if ($(this).scrollTop() > filterHeight) {

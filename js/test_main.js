@@ -135,7 +135,6 @@ $(document).on("click", ".removeRoom", function () {
 // get child age
 function val() {
   let childAge = document.getElementsByClassName(`select${roomNum}`).value;
-  console.log(childAge)
 }
 
 // remove child
@@ -161,7 +160,6 @@ $(document).on("click", ".removeChild", function () {
 });
 // add child
 $(document).on("click", ".addChild", function () {
-  console.log('add child');
 });
 
 // toggle class active to checkbox on click
