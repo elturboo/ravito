@@ -142,6 +142,7 @@ label.requierd::after {
   padding: 0.5rem 1rem;
   margin: 1rem 0;
   height: 3.7rem;
+  position: relative;
 }
 .inputGroup label {
   display: block;
@@ -242,6 +243,14 @@ nav.breadcrumb ol {
 }
 nav.breadcrumb .breadcrumb-item + .breadcrumb-item::before {
   content: var(--bs-breadcrumb-divider, ">");
+}
+
+#toggle-password {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  background: transparent;
+  border: none;
 }
 
 header nav {

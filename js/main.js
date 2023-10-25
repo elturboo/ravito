@@ -1,3 +1,15 @@
+$(document).ready(function () {
+  // When the eye icon is clicked
+  $("#toggle-password").click(function () {
+      const passwordField = $("#password");
+      if (passwordField.attr("type") === "password") {
+          passwordField.attr("type", "text");
+      } else {
+          passwordField.attr("type", "password");
+      }
+  });
+});
+
 let roomNum = 1;
 // get child age
 function val() {
@@ -168,3 +180,5 @@ $(window).scroll(function () {
     $(".navbar").css("background", "transparent");
   }
 });
+
+
